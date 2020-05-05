@@ -1,4 +1,27 @@
 .education {
     height: 100vh;
     background-color: #010304;
+
+    //Set grid
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // align-items: center;
+        margin-left: 5rem;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            line-height: 1.7;
+        }
+    }
 }

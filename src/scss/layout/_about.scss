@@ -1,4 +1,158 @@
 .about {
     height: 100vh;
     background-color: #010304;
+
+    //Set grid
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+    &__desc {
+        font-size: 1.6rem;
+        font-weight: 100;
+        margin-top: 2rem;
+    }
+
+    &__overview {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        position: relative;
+        left: 25%;
+
+        &--icons {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: start;
+
+        }
+
+        &--icon {
+            height: 3rem;
+            width: 3rem;
+            fill: white;
+            margin-right: 1rem;
+        }
+    }
+
+    &__title {
+        font-size: 5rem;
+        font-weight: 100;
+
+        &--top {
+            display: block;
+
+        }
+
+        &--bottom {
+            display: block;
+
+        }
+
+        &--C {
+            display: inline-block;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #ffaf29;
+        }
+
+    }
+
+    &__content {
+        //Set grid
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        justify-items: center;
+        align-items: center;
+
+        span {
+            font-size: 1.6rem;
+            padding-bottom: .5rem;
+            cursor: pointer;
+        }
+
+        &--intro {
+            grid-row: 2 / 3;
+            grid-column: 4 / 5;
+
+        }
+
+        &--contact {
+            grid-row: 2 / 3;
+            grid-column: 6 / 7;
+
+        }
+
+        &--skills {
+            grid-row: 2 / 3;
+            grid-column: 8 / 9;
+
+        }
+    }
+
+    &__card-intro { 
+        font-weight: 100;
+
+        h2 {
+
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        :nth-child(2) {
+            font-size: 3.5rem;
+            margin-bottom: 3rem;
+        }
+
+        :nth-child(3) {
+            font-size: 1.5rem;
+        }
+
+        :nth-child(4) {
+            font-size: 1.5rem;
+        }
+        
+    }
+
+    &__card-contact {
+        font-weight: 100;
+        display: none;
+
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 300;
+        }
+
+        :nth-child(2) {
+            font-size: 3.5rem;
+            margin-bottom: 3rem;
+        }
+
+        :nth-child(3) {
+            font-size: 1.5rem;
+        }
+
+        :nth-child(4) {
+            font-size: 1.5rem;
+        }
+    }
+
+
+
+
+}
+
+.active {
+
+    border-bottom: 1px solid #ffaf29;
+}
+
+.card {
+    grid-row: 3 / 11;
+    grid-column: 4 / 9;
+
 }

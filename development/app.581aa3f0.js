@@ -210,7 +210,44 @@ window.onscroll = function () {
   }
 
   prevScrollPos = currentScrollPos;
-};
+}; //Function to repeat landing section animation
+
+
+setInterval(function () {
+  document.querySelector(".landing__title").classList.toggle("title-animation");
+  document.querySelector(".landing__sub").classList.toggle("sub-animation");
+}, 4000); //Event listeners for intro, contact and skills buttons
+
+var introducingLink = document.querySelector(".about__content--intro");
+var contactLink = document.querySelector(".about__content--contact");
+var skillsLink = document.querySelector(".about__content--skills");
+var introducing = document.querySelector(".about__card-intro");
+var contact = document.querySelector(".about__card-contact");
+var skills = document.querySelector(".about__card-skills");
+introducingLink.addEventListener("click", function () {
+  introducingLink.classList.add("active");
+  contactLink.classList.remove("active");
+  skillsLink.classList.remove("active");
+  introducing.style.display = "block";
+  contact.style.display = "none";
+  skills.style.display = "none";
+});
+contactLink.addEventListener("click", function () {
+  introducingLink.classList.remove("active");
+  contactLink.classList.add("active");
+  skillsLink.classList.remove("active");
+  introducing.style.display = "none";
+  contact.style.display = "block";
+  skills.style.display = "none";
+});
+skillsLink.addEventListener("click", function () {
+  introducingLink.classList.remove("active");
+  contactLink.classList.remove("active");
+  skillsLink.classList.add("active");
+  introducing.style.display = "none";
+  contact.style.display = "none";
+  skills.style.display = "block";
+});
 },{"./scss/main.scss":"../src/scss/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -239,7 +276,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58678" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49385" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -43,28 +43,73 @@
         <!-- landing section -->
         <section class="landing parallax">
             <div class="heading">
-                <h1>Hi, I'm Will</h1>
-                <h2>Full stack web developer</h2>
+                <h1 class="landing__title">Hi, I'm Will</h1>
+                <h2 class="landing__sub">Full stack web developer</h2>
             </div>
         </section>
 
         <!-- About section -->
         <section class="about">
+            <div class="about__overview">
+                <h2 class="about__title">
+                    <span class="about__title--top">Will</span>
+                    <span class="about__title--bottom"><span class="about__title--C">C</span>onstable</span>
+                </h2>
+                <p class="about__desc">Full stack web and softwate developer based in London</p>
 
-            <!-- Contact details -->
-            <div class="about__contact">
-                Contact details
+                <div class="about__overview--icons">
+                    <svg class="about__overview--icon">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-linkedin-square"></use>
+                    </svg>
+
+                    <svg class="about__overview--icon">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+
+                    <svg class="about__overview--icon">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-codepen"></use>
+                    </svg>
+
+                    <svg class="about__overview--icon">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-twitter"></use>
+                    </svg>
+                </div>
             </div>
 
-            <!-- Skills -->
-            <div class="about__skills">
-                Skills
+            <div class="about__content">
+                <span class="about__content--intro active">Introducing</span>
+                <span class="about__content--contact">Contact</span>
+                <span class="about__content--skills">Skills</span>
+
+                <div class="card about__card-intro">
+                    <h2>- Introducing</h2>
+                    <p>A passionate developer, specialising in front and backend web develpment</p>
+                    <p>Check out a range of applications I have built in the portfolio section below. Get in contact if you would like to have a chat about work</p>
+                    <p>Why don't you have a go at the RGB color game at the bottom of the page.</p>
+
+                </div>
+
+                <div class="card about__card-contact">
+                    <h2>- Contact</h2>
+                    <p>Get in contact via any method on this site</p>
+                    <p>Phone: 07970 058 852</p>
+                    <p>Email: will_constable@msn.com</p>
+                </div>
             </div>
+
+            <div class="card about__card-skills">
+
+            </div>
+
+               
 
         </section>
 
+        <!-- Portfolio section -->
         <section class="portfolio">
 
+
+            <!-- Individual portfolio cards -->
             <div class="portfolio__card portfolio__card--1">
                 <img class="portfolio__card--img" src="/out-n-in.e2476ab6.jpg">
             </div>
@@ -105,6 +150,55 @@
 
         <section class="education">
 
+            <div class="education__details">
+                <h2>Courses completed</h2>
+                <p>Codecademy - Building Websites From Scratch</p>
+                <p>Codecademy - Building Webs Applications From Scratch</p>
+                <p>Udemy - The Web Developer Bootcamp</p>
+                <p>Udemy - Advanced CSS and Sass</p>
+                <p>Udemy - Modern JavaScript From The Beginning</p>
+                <p>Udemy - The Modern React Bootcamp</p>
+
+
+            </div>
+
+            <div class="education__game">
+                <h2>Just for fun</h2>
+                <div class="game-container">
+                    <!-- Head section content -->
+        <div class="head-section">
+            <!-- Title -->
+            <h1 class="heading">The RGB Color Game</h1>
+            <!-- Color display -->
+            <h2 id="color-display">RGB</h2>
+
+        </div>
+
+        <!-- Game bar componenents-->
+        <div class="game-bar">
+        <!-- New game button -->
+        <button class="btn" id="new-game">New Colors</button>
+        <!-- Game status message display -->
+        <div class="message" id="game-message"></div>
+        <!-- Game difficulty buttons -->
+        <button class="btn" id="easy-btn">Easy</button>
+        <button class="btn" id="hard-btn">Hard</button>
+        </div>
+
+        <!-- game squares -->
+        <div class="game-board">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+
+        </div>
+                </div>
+
+            </div>
+
         </section>
 
     </main>
@@ -114,3 +208,81 @@
     <script src="/app.581aa3f0.js"></script>
 </body>
 </html>
+
+
+ <!-- <div class="about__skills">
+                     Individual icon SVG's
+                <div class="about__skills--icons">
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-html5"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-css3"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-javascript"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-sass"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-node-dot-js"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-npm"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-react"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-php"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-bootstrap"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-babel"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-git"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-mongodb"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-mysql"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-webpack"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-heroku"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-netlify"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-gulp"></use>
+                    </svg>
+
+                    <svg class="about__skills--icon">
+                        <use xlink:href="../src/img/sprite.svg#icon-postman"></use>
+                    </svg>
+
+                </div> -->
