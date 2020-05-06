@@ -65,11 +65,12 @@
                 <a href="" class="mobile-nav__list--link">Skills</a>
             </li>
 
-            <div class="hamburger">
+            <div class="hamburger hamburger-mob">
                 <span class="hamburger__top"></span>
                 <span class="hamburger__middle"></span>
                 <span class="hamburger__bottom"></span>
             </div>
+
         </ul>
 
     </nav>
@@ -122,7 +123,7 @@
                 <div class="card about__card-intro">
                     <h2>- Introducing</h2>
                     <p>A passionate developer, specialising in front and backend web develpment</p>
-                    <p>Check out a range of applications I have built in the portfolio section below. Get in contact if you would like to have a chat about work</p>
+                    <p>Check out a range of applications I have built in the portfolio section below. Get in contact if you would like to have a chat about work</p><br>
                     <p>Why don't you have a go at the RGB color game at the bottom of the page.</p>
 
                 </div>
@@ -133,11 +134,14 @@
                     <p>Phone: 07970 058 852</p>
                     <p>Email: will_constable@msn.com</p>
                 </div>
+
+                <div class="card about__card-skills">
+                    <!-- <a class="twitter-timeline" href="https://twitter.com/will_constable?ref_src=twsrc%5Etfw">Tweets by will_constable</a> -->
+                </div>
             </div>
 
-            <div class="card about__card-skills">
 
-            </div>
+            
 
                
 
@@ -252,7 +256,7 @@
 
             <!-- Front end skills -->
             <div class="skill-sec__card skill-sec__card--front">
-                <h3 class="skill-sec__title">Frontend skills</h3>
+                <h3 class="skill-sec__title"><span class="--u-letter-underline">F</span>rontend skills</h3>
                 <div class="skill-sec__group--1 skill-sec__group">
                     <svg class="skills-icon">
                         <use xlink:href="/sprite.6e502058.svg#icon-html5">/use>
@@ -289,7 +293,7 @@
 
             <!-- Backend skills -->
             <div class="skill-sec__card skill-sec__card--back">
-                <h3 class="skill-sec__title">Backend skills</h3>
+                <h3 class="skill-sec__title"><span class="--u-letter-underline">B</span>ackend skills</h3>
 
                 <div class="skill-sec__group--1 skill-sec__group">
                     <svg class="skills-icon">
@@ -317,8 +321,9 @@
 
             </div>
 
+            <!-- Frameworks and Libraries -->
             <div class="skill-sec__card skill-sec__card--frame">
-                <h3 class="skill-sec__title">Frameworks and Libraries</h3>
+                <h3 class="skill-sec__title"><span class="--u-letter-underline">F</span>rameworks and Libraries</h3>
 
                 <div class="skill-sec__group--1 skill-sec__group">
                     <svg class="skills-icon">
@@ -338,9 +343,11 @@
 
             </div>
 
+
+            <!-- Developer tools -->
             <div class="skill-sec__card skill-sec__card--dev">
 
-                <h3 class="skill-sec__title">Developer tools</h3>
+                <h3 class="skill-sec__title"><span class="--u-letter-underline">D</span>eveloper tools</h3>
 
                 <div class="skill-sec__group--1 skill-sec__group">
                     <svg class="skills-icon">
@@ -384,8 +391,9 @@
 
             </div>
 
+            <!-- Databases -->
             <div class="skill-sec__card skill-sec__card--db">
-                <h3 class="skill-sec__title">Database</h3>
+                <h3 class="skill-sec__title"><span class="--u-letter-underline">D</span>atabase</h3>
 
                 <div class="skill-sec__group--1 skill-sec__group">
                     <svg class="skills-icon">
@@ -405,8 +413,9 @@
 
             </div>
 
+            <!-- Hosting -->
             <div class="skill-sec__card skill-sec__card--host">
-                <h3 class="skill-sec__title">Hosting</h3>
+                <h3 class="skill-sec__title"><span class="--u-letter-underline">H</span>osting</h3>
 
                 <div class="skill-sec__group--1 skill-sec__group">
                     <svg class="skills-icon">
@@ -430,8 +439,251 @@
 
     </main>
 
+
+    <!-- Portfolio section modal -->
+    <section class="modal">
+
+        <!-- Overall modal container -->
+        <div class="modal__container">
+
+
+            <!-- individual modal items -->
+            <div class="modal__content modal__content--1">
+                <h1 class="modal__content--heading">Out-N-In</h1>
+                <!-- <img src="../src/img/out-n-in.jpg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">Take</span> a look at this modern single page scrolling website</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- Responsive layout with CSS grid</p>
+                    <p>- Bootstrap navigation bar</p>
+                    <p>- Menu modal</p>
+                    <p>- Ability to add items to a cart</p>
+                    <p>- Functionality developed with JavaScript</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View Repo</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+            <div class="modal__content modal__content--2">
+                <h1 class="modal__content--heading">Colmar Academy</h1>
+                <!-- <img src="../src/img/colmar.jpg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">The</span> coedecademy capstone project</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- The capstone project for the building websites from scratch course</p>
+                    <p>- Responsive layout with flexbox</p>
+                    <p>- Animated hover features</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View Repo</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+            <div class="modal__content modal__content--3">
+                <h1 class="modal__content--heading">Destinate</h1>
+                <!-- <img src="../src/img/destinate.jpg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">A</span> travel application built on the backend</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- Built with node.JS with Express and EJS</p>
+                    <p>- RESTful routing</p>
+                    <p>- Authentication and Authorisation using passport and express session</p>
+                    <p>- User details, posts and comments stored in a MongoDB database</p>
+                    <p>- Flash alerts</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View Repo</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+            <div class="modal__content modal__content--4">
+                <h1 class="modal__content--heading">Memory Cards</h1>
+                <!-- <img src="../src/img/memory-cards.jpg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">Play</span>  this fun memory card game</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- Functionallity built with JavaScript</p>
+                    <p>- Timer and move counter to analyze performance</p>
+                    <p>- Variables to track card selections and game status</p>
+                    <p>- Built using parcel and transpiled with babel</p>
+                    <p>- SCSS</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View Repo</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+            <div class="modal__content modal__content--5">
+                <h1 class="modal__content--heading">Github User Finder</h1>
+                <!-- <img src="../src/img/github-finder.jpg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">Find</span> any GitHub user with this search tool</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- Search for a user and first match will be displayed</p>
+                    <p>- Users latest five repositiory's are displayed</p>
+                    <p>- Search triggers an HTTP request to the GitHub API</p>
+                    <p>- HTTP request made using Fetch</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View Repo</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+            <div class="modal__content modal__content--6">
+                <h1 class="modal__content--heading">Movie Collection</h1>
+                <!-- <img src="../src/img/movie-collection.jpg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">Search</span> for any title using this movie collection application</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- User can search for any movie title</p>
+                    <p>- First twenty matches are displayed</p>
+                    <p>- HTTP request using fetch to the movieDB API</p>
+                    <p>- Second HTTP request using id to fetch specific movie</p>
+                    <p>- Add movies to wishlist or collection</p>
+                    <p>- Wishlist and collection items persisted to local storage</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View Repo</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+            <div class="modal__content modal__content--7">
+                <h1 class="modal__content--heading">Furnish</h1>
+                <!-- <img src="../src/img/furnish.jpeg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">A</span> beautiful website for a fictional furnishing company</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- Single page scrollable website built using SCSS</p>
+                    <p>- Fully responsive</p>
+                    <p>- CSS animations</p>
+                    <p>- Custom grid system</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View Repo</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+            <div class="modal__content modal__content--8">
+                <h1 class="modal__content--heading">Meal Finder</h1>
+                <!-- <img src="../src/img/meal-finder.jpg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">Inspire</span> the inner chef in you with this meal finder application</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- User can search for meals by ingredient</p>
+                    <p>- List of meals are displayed in UI</p>
+                    <p>- Bootstrap</p>
+                    <p>- HTTP request to the mealDB API using fetch</p>
+                    <p>- Second HTTP request using id to fetch specific meal details</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View Repo</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+            <div class="modal__content modal__content--9">
+                <h1 class="modal__content--heading">Shopping List</h1>
+                <!-- <img src="../src/img/shopping-list.jpg" class="modal__content--img"> -->
+
+                <p class="modal__content--lead"><span class="--u-letter-underline">Keep</span> track of all your shopping needs</p>
+                <div class="modal__content--features">
+                    <h2>Features</h2>
+                    <p>- User can add and remove items from their list</p>
+                    <p>- Items are persisted to local storage</p>
+                    <p>- User can filter items</p>
+                    <p>- Bootstrap</p>
+                </div>
+
+                    <svg class="about__overview--icon modal__content--github">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--git-text">View GitHub repositiory</span>
+
+                    <svg class="about__overview--icon modal__content--view">
+                        <use xlink:href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                    </svg>
+                    <span class="modal__content--view-text">View Project</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
     
-    
+    <!-- <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  -->
     <script src="/app.581aa3f0.js"></script>
 </body>
 </html>

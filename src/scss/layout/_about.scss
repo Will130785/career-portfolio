@@ -1,3 +1,4 @@
+//Main about section container - Contains personal details and content
 .about {
     height: 100vh;
     background-color: #010304;
@@ -7,12 +8,20 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
 
+    //Change grid layout for 600px and below
+    @media only screen and (max-width: 600px) {
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+    //Description of developer
     &__desc {
         font-size: 1.6rem;
-        font-weight: 100;
+        font-weight: 300;
         margin-top: 2rem;
     }
 
+    //Overview details
     &__overview {
         display: flex;
         flex-direction: column;
@@ -21,6 +30,15 @@
         position: relative;
         left: 25%;
 
+
+        //Change grid postion for 600px and below
+        @media only screen and (max-width: 600px) {
+            grid-row: 1 / 2;
+            grid-column: 1 / -1;
+            left: 0;
+        }
+
+        //Icon container
         &--icons {
             margin-top: 4rem;
             display: flex;
@@ -28,6 +46,7 @@
 
         }
 
+        //Individual icons
         &--icon {
             height: 3rem;
             width: 3rem;
@@ -36,10 +55,13 @@
         }
     }
 
+
+    //Name section
     &__title {
         font-size: 5rem;
         font-weight: 100;
 
+        //Split name into two rows
         &--top {
             display: block;
 
@@ -53,6 +75,7 @@
 
     }
 
+    //Content section
     &__content {
         //Set grid
         display: grid;
@@ -61,6 +84,14 @@
         justify-items: center;
         align-items: center;
 
+
+        //Change grid position for 600px and below
+        @media only screen and (max-width: 600px) {
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+        }
+
+        //Tab styling
         span {
             font-size: 1.6rem;
             padding-bottom: .5rem;
@@ -71,9 +102,16 @@
             grid-row: 2 / 3;
             grid-column: 4 / 5;
 
+            //Change grid position for 600px and below
+            @media only screen and (max-width: 600px) {
+                grid-row: 2 / 3;
+                grid-column: 1 / 2;
+            }
+
 
         }
 
+        //Set hover properties
         &--intro:hover {
             border-bottom: 2px solid #ffb1299c;
         }
@@ -81,9 +119,16 @@
         &--contact {
             grid-row: 2 / 3;
             grid-column: 6 / 7;
+            
+            //Change grid position for 600px and below
+            @media only screen and (max-width: 600px) {
+                grid-row: 2 / 3;
+                grid-column: 3 / 4;
+            }
 
         }
 
+        //Set hover properties
         &--contact:hover {
             border-bottom: 2px solid #ffb1299c;
         }
@@ -92,13 +137,23 @@
             grid-row: 2 / 3;
             grid-column: 8 / 9;
 
+            //Change grid position for 600px and below
+            @media only screen and (max-width: 600px) {
+                grid-row: 2 / 3;
+                grid-column: 5 / 6;
+            }
+
         }
 
+        //Set hover properties
         &--skills:hover {
             border-bottom: 2px solid #ffb1299c;
         }
     }
 
+
+    //Section styling
+    //Intro section
     &__card-intro { 
         font-weight: 100;
 
@@ -116,14 +171,17 @@
 
         :nth-child(3) {
             font-size: 1.5rem;
+            font-weight: 300;
         }
 
-        :nth-child(4) {
+        :nth-child(5) {
             font-size: 1.5rem;
+            font-weight: 300;
         }
         
     }
 
+    //Contact section
     &__card-contact {
         font-weight: 100;
         display: none;
@@ -142,10 +200,12 @@
 
         :nth-child(3) {
             font-size: 1.5rem;
+            font-weight: 300;
         }
 
         :nth-child(4) {
             font-size: 1.5rem;
+            font-weight: 300;
         }
     }
 
@@ -154,13 +214,21 @@
 
 }
 
+//Active class for selected tab - will be assigned with JavaScript
 .active {
 
     border-bottom: 2px solid #ffaf29;
 }
 
+
+//Overall card properties
 .card {
     grid-row: 3 / 11;
     grid-column: 4 / 9;
+
+    @media only screen and (max-width: 600px) {
+        grid-row: 4 / -1;
+        grid-column: 1 / -1;
+    }
 
 }

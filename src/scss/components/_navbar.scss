@@ -2,7 +2,7 @@
 .navbar {
     position: fixed;
     z-index: 2;
-    height: 6rem;
+    height: 8rem;
     background-color: black;
     width: 100%;
     transition: all 1s;
@@ -10,6 +10,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 1.6rem;
+    padding: 0 1rem;
 
     &__navbrand {
         margin: 1rem;
@@ -64,11 +65,13 @@
     font-size: 1.6rem;
     position: fixed;
     z-index: 6;
+    padding: 1rem;
 
     &__list {
         display: none;
         list-style: none;
         margin-left: 1rem;
+        position: relative;
 
         &--item {
             margin-bottom: 1rem;
@@ -79,6 +82,10 @@
             color: white;
             text-decoration: none;
 
+        }
+
+        &--link:hover {
+            color: #ffb129;
         }
     }
 }

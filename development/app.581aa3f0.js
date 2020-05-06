@@ -281,6 +281,122 @@ hamburger.forEach(function (burger) {
       navbarActive = 0;
     }
   });
+}); //Event listeners for portfolio modal
+
+var projects = document.querySelectorAll(".portfolio__card");
+var modal = document.querySelector(".modal");
+var exitModal = document.querySelectorAll(".modal__content--exit"); //Individual project modal content
+
+var modalOne = document.querySelector(".modal__content--1");
+var modalTwo = document.querySelector(".modal__content--2");
+var modalThree = document.querySelector(".modal__content--3");
+var modalFour = document.querySelector(".modal__content--4");
+var modalFive = document.querySelector(".modal__content--5");
+var modalSix = document.querySelector(".modal__content--6");
+var modalSeven = document.querySelector(".modal__content--7");
+var modalEight = document.querySelector(".modal__content--8");
+var modalNine = document.querySelector(".modal__content--9");
+projects.forEach(function (project) {
+  project.addEventListener("click", function (e) {
+    modal.style.display = "block";
+
+    if (project.classList.contains("portfolio__card--1")) {
+      modalOne.style.display = "grid";
+      modalTwo.style.display = "none";
+      modalThree.style.display = "none";
+      modalFour.style.display = "none";
+      modalFive.style.display = "none";
+      modalSix.style.display = "none";
+      modalSeven.style.display = "none";
+      modalEight.style.display = "none";
+      modalNine.style.display = "none";
+    } else if (project.classList.contains("portfolio__card--2")) {
+      modalOne.style.display = "none";
+      modalTwo.style.display = "grid";
+      modalThree.style.display = "none";
+      modalFour.style.display = "none";
+      modalFive.style.display = "none";
+      modalSix.style.display = "none";
+      modalSeven.style.display = "none";
+      modalEight.style.display = "none";
+      modalNine.style.display = "none";
+    } else if (project.classList.contains("portfolio__card--3")) {
+      modalOne.style.display = "none";
+      modalTwo.style.display = "none";
+      modalThree.style.display = "grid";
+      modalFour.style.display = "none";
+      modalFive.style.display = "none";
+      modalSix.style.display = "none";
+      modalSeven.style.display = "none";
+      modalEight.style.display = "none";
+      modalNine.style.display = "none";
+    } else if (project.classList.contains("portfolio__card--4")) {
+      modalOne.style.display = "none";
+      modalTwo.style.display = "none";
+      modalThree.style.display = "none";
+      modalFour.style.display = "grid";
+      modalFive.style.display = "none";
+      modalSix.style.display = "none";
+      modalSeven.style.display = "none";
+      modalEight.style.display = "none";
+      modalNine.style.display = "none";
+    } else if (project.classList.contains("portfolio__card--5")) {
+      modalOne.style.display = "none";
+      modalTwo.style.display = "none";
+      modalThree.style.display = "none";
+      modalFour.style.display = "none";
+      modalFive.style.display = "grid";
+      modalSix.style.display = "none";
+      modalSeven.style.display = "none";
+      modalEight.style.display = "none";
+      modalNine.style.display = "none";
+    } else if (project.classList.contains("portfolio__card--6")) {
+      modalOne.style.display = "none";
+      modalTwo.style.display = "none";
+      modalThree.style.display = "none";
+      modalFour.style.display = "none";
+      modalFive.style.display = "none";
+      modalSix.style.display = "grid";
+      modalSeven.style.display = "none";
+      modalEight.style.display = "none";
+      modalNine.style.display = "none";
+    } else if (project.classList.contains("portfolio__card--7")) {
+      modalOne.style.display = "none";
+      modalTwo.style.display = "none";
+      modalThree.style.display = "none";
+      modalFour.style.display = "none";
+      modalFive.style.display = "none";
+      modalSix.style.display = "none";
+      modalSeven.style.display = "grid";
+      modalEight.style.display = "none";
+      modalNine.style.display = "none";
+    } else if (project.classList.contains("portfolio__card--8")) {
+      modalOne.style.display = "none";
+      modalTwo.style.display = "none";
+      modalThree.style.display = "none";
+      modalFour.style.display = "none";
+      modalFive.style.display = "none";
+      modalSix.style.display = "none";
+      modalSeven.style.display = "none";
+      modalEight.style.display = "grid";
+      modalNine.style.display = "none";
+    } else if (project.classList.contains("portfolio__card--9")) {
+      modalOne.style.display = "none";
+      modalTwo.style.display = "none";
+      modalThree.style.display = "none";
+      modalFour.style.display = "none";
+      modalFive.style.display = "none";
+      modalSix.style.display = "none";
+      modalSeven.style.display = "none";
+      modalEight.style.display = "none";
+      modalNine.style.display = "grid";
+    }
+  });
+});
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
 });
 },{"./scss/main.scss":"../src/scss/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -310,7 +426,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56810" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52777" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
