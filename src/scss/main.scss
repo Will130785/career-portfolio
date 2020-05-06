@@ -2,6 +2,7 @@
 
 @import "base/animations";
 @import "base/base";
+@import "base/utilities";
 
 @import "components/hamburger";
 @import "components/navbar";
@@ -11,4 +12,5 @@
 @import "layout/education";
 @import "layout/game";
 @import "layout/landing";
-@import "layout/portfolio"
+@import "layout/portfolio";
+@import "layout/skills";

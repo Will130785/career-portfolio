@@ -50,11 +50,6 @@
 
         }
 
-        &--C {
-            display: inline-block;
-            padding-bottom: 1rem;
-            border-bottom: 3px solid #ffaf29;
-        }
 
     }
 
@@ -76,6 +71,11 @@
             grid-row: 2 / 3;
             grid-column: 4 / 5;
 
+
+        }
+
+        &--intro:hover {
+            border-bottom: 2px solid #ffb1299c;
         }
 
         &--contact {
@@ -84,10 +84,18 @@
 
         }
 
+        &--contact:hover {
+            border-bottom: 2px solid #ffb1299c;
+        }
+
         &--skills {
             grid-row: 2 / 3;
             grid-column: 8 / 9;
 
+        }
+
+        &--skills:hover {
+            border-bottom: 2px solid #ffb1299c;
         }
     }
 
@@ -148,7 +156,7 @@
 
 .active {
 
-    border-bottom: 1px solid #ffaf29;
+    border-bottom: 2px solid #ffaf29;
 }
 
 .card {

@@ -1,16 +1,22 @@
 .hamburger {
-    height: 3rem;
-    width: 3rem;
-    border: 1px solid white;
-    display: flex;
+    cursor: pointer;
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 2px solid white;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
+
+    @media only screen and (max-width: 900px) {
+        display: flex;
+    }
 
     span {
         width: 2.4rem;
         display: block;
-        border-bottom: 1px solid white;
+        border-bottom: 2px solid white;
         margin: .3rem 0;
     }
 
@@ -25,5 +31,13 @@
     &__bottom {
 
         
+    }
+}
+
+.hamburger:hover {
+    border: 2px solid #ffb129;
+
+    span {
+        border-bottom: 2px solid #ffb1299c;
     }
 }

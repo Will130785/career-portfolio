@@ -216,14 +216,18 @@ window.onscroll = function () {
 setInterval(function () {
   document.querySelector(".landing__title").classList.toggle("title-animation");
   document.querySelector(".landing__sub").classList.toggle("sub-animation");
-}, 4000); //Event listeners for intro, contact and skills buttons
+}, 4000); //Event listeners for intro, contact, skills, game and instructions buttons
 
 var introducingLink = document.querySelector(".about__content--intro");
 var contactLink = document.querySelector(".about__content--contact");
 var skillsLink = document.querySelector(".about__content--skills");
+var gameLink = document.querySelector(".education__game--game");
+var instructionLink = document.querySelector(".education__game--inst");
 var introducing = document.querySelector(".about__card-intro");
 var contact = document.querySelector(".about__card-contact");
 var skills = document.querySelector(".about__card-skills");
+var game = document.querySelector(".game-container");
+var instruction = document.querySelector(".instruction-container");
 introducingLink.addEventListener("click", function () {
   introducingLink.classList.add("active");
   contactLink.classList.remove("active");
@@ -247,6 +251,36 @@ skillsLink.addEventListener("click", function () {
   introducing.style.display = "none";
   contact.style.display = "none";
   skills.style.display = "block";
+});
+gameLink.addEventListener("click", function () {
+  gameLink.classList.add("active");
+  instructionLink.classList.remove("active");
+  game.style.display = "grid";
+  instruction.style.display = "none";
+});
+instructionLink.addEventListener("click", function () {
+  gameLink.classList.remove("active");
+  instructionLink.classList.add("active");
+  game.style.display = "none";
+  instruction.style.display = "flex";
+}); //Event listener for hamburger
+
+var hamburger = document.querySelectorAll(".hamburger");
+var mobileNav = document.querySelector(".mobile-nav");
+var mobileNavContent = document.querySelector(".mobile-nav__list");
+var navbarActive = 0;
+hamburger.forEach(function (burger) {
+  burger.addEventListener("click", function (e) {
+    if (navbarActive === 0) {
+      mobileNav.style.height = "200px";
+      mobileNavContent.style.display = "block";
+      navbarActive = 1;
+    } else if (navbarActive === 1) {
+      mobileNav.style.height = "0px";
+      mobileNavContent.style.display = "none";
+      navbarActive = 0;
+    }
+  });
 });
 },{"./scss/main.scss":"../src/scss/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -276,7 +310,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49385" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56810" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

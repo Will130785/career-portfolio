@@ -1,0 +1,120 @@
+.skill-sec {
+    background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    //Set grid
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+
+    &__card {
+        background-color: rgba(0, 0, 0, 0.548);
+        padding: 2rem;
+        box-shadow: 0 .5rem 2rem rgba(255, 255, 255, 0.1);
+        border-radius: .5rem;
+
+        //Set grid
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+
+        &--front {
+            grid-row: 2 / 6;
+            grid-column: 2 / 5;
+
+        }
+
+        &--back {
+            grid-row: 2 / 6;
+            grid-column: 6 / 9;
+
+        }
+
+        &--frame {
+            grid-row: 2 / 6;
+            grid-column: 10 / 13;
+
+        }
+
+        &--dev {
+            grid-row: 8 / 12;
+            grid-column: 2 / 5;
+
+        }
+
+        &--db {
+            grid-row: 8 / 12;
+            grid-column: 6 / 9;
+
+        }
+
+        &--host {
+            grid-row: 8 / 12;
+            grid-column: 10 / 13;
+
+        }
+    }
+
+    &__title {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        font-size: 1.8rem;
+        font-weight: 100;
+    }
+
+    &__group {
+        font-size: 1.4rem;
+        font-weight: 300;
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        transition: all .2s;
+
+        &--1 {
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+
+        }
+
+        &--2 {
+            grid-row: 3 / 4;
+            grid-column: 1 / -1;
+
+        }
+
+        &--3 {
+            grid-row: 4 / 5;
+            grid-column: 1 / -1;
+
+        }
+
+        &--4 {
+            grid-row: 5 / 6;
+            grid-column: 1 / -1;
+
+        }
+
+        &--5 {
+            grid-row: 6 / 7;
+            grid-column: 1 / -1;
+
+        }
+    }
+
+    &__group:hover {
+        cursor: pointer;
+        transform: translateY(-.5rem);
+    }
+}
+
+.skills-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 2rem;
+}

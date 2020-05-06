@@ -1,8 +1,50 @@
 .education__game {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    justify-items: center;
     align-items: center;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        
+    }
+
+    &--new {
+        font-size: 1.5rem;
+        font-weight: 300
+    }
+
+    &--inst {
+        cursor: pointer;
+        grid-row: 2 / 3;
+        grid-column: 8 / 9;
+        font-size: 1.6rem;
+        padding-bottom: .5rem;
+    }
+
+    &--inst:hover {
+        border-bottom: 2px solid #ffb1299c;
+    }
+
+    &--game:hover {
+        border-bottom: 2px solid #ffb1299c;
+    }
+
+    &--game {
+        cursor: pointer;
+        grid-row: 2 / 3;
+        grid-column: 6 / 7;
+        font-size: 1.6rem;
+        padding-bottom: .5rem;
+
+    }
+}
+
+.card-ed {
+    grid-row: 3 / 11;
+    grid-column: 4 / 9;
 }
 
 .game-container {
@@ -12,62 +54,50 @@
     justify-items: center;
 }
 
+.instruction-container {
+    display: none;
+    flex-direction: column;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+
+    &__blurb {
+        font-size: 3rem;
+        font-weight: 100;
+        margin-bottom: 3rem;
+
+    }
+
+    &__desc {
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+
+    }
+}
+
 .head-section {
     grid-column: 1 / -1;
+    grid-row: 2 / 3;
     width: 100%;
     font-size: 1rem;
     text-transform: uppercase;
     text-align: center;
-    // color: #fff
 }
 
 .heading {
     margin: 1rem 0;
+    font-weight: 300;
 }
 
 #color-display {
     text-align: center;
     margin-bottom: 4rem;
     font-size: 1rem;
-
-}
-
-.game-bar {
-    width: 100%;
-    grid-row: 2 / 3;
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    // background-color: #fff;
-    text-align: center;
-}
-
-.btn {
-    border: none;
-    font-size: 1rem;
-    color: rgb(255, 192, 20);
-    transition: all .75s;
-    background-color: black;
-
-}
-
-.btn:hover {
-    // background-color: rgb(255, 192, 20);
-    // color: #fff;
-}
-
-#new-game {
-    grid-column: 3 / 4;
-    
-}
-
-#easy-btn {
-    grid-column: 9 / 10;
-
-}
-
-#hard-btn {
-    grid-column: 10 / 11;
+    font-weight: 300;
 
 }
 
@@ -104,4 +134,12 @@
     border-radius: 50%;
     transition: all 1s;
 
+}
+
+.new-colors {
+    cursor: pointer;
+}
+
+.new-colors:hover {
+    border-bottom: 2px solid #ffb1299c;
 }
