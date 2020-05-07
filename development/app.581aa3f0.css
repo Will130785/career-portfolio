@@ -669,6 +669,27 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
 }
+.about__card-skills {
+  font-weight: 100;
+  display: none;
+}
+.about__card-skills h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.about__card-skills :nth-child(2) {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+.about__card-skills :nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.about__card-skills :nth-child(4) {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
 
 .active {
   border-bottom: 2px solid #ffaf29;

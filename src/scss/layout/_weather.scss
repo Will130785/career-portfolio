@@ -1,0 +1,172 @@
+.weather-container {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.display {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.country {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.city {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.region {
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.image {
+    grid-row: 4 / 5;
+    grid-column: 1 / -1;
+
+}
+
+.text {
+    grid-row: 5 / 6;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.temp {
+    grid-row: 6 / 7;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.feels-like {
+    grid-row: 7 / 8;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+}
+
+.wind-speed {
+    grid-row: 8 / 9;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.wind-direction {
+    grid-row: 9 / 10;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.humidity {
+    grid-row: 10 / 11;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.uv-rating {
+    grid-row: 11 / 12;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.visibility {
+    grid-row: 12 / 13;
+    grid-column: 1 / -1;
+    font-size: 1rem;
+
+}
+
+.country-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.city-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.region-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.temp-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.feels-like-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wind-speed-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wind-direction-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.humidity-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.uv-rating-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.visibility-info {
+    position: relative;
+    top: 1rem;
+    display: flex;
+    justify-content: center;
+}
