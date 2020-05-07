@@ -4,16 +4,13 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     transition: all;
 
-    @media only screen and (max-width: 900px) {
-        background-attachment: initial;
-    }
 
     &__title {
         font-size: 10rem;

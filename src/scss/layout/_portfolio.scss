@@ -5,16 +5,13 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100vw 100vh;
 
     //Set grid
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(13, 1fr);
 
-    @media only screen and (max-width: 900px) {
-        background-attachment: initial;
-    }
 
     @media only screen and (max-width: 700px) {
         grid-template-rows: repeat(9, 1fr);

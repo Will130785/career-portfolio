@@ -1004,7 +1004,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1028,7 +1028,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw 100vh;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: repeat(13, 1fr);
@@ -1149,7 +1149,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw 100vh;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: repeat(12, 1fr);
