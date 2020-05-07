@@ -9,8 +9,10 @@ const instructionLink = document.querySelector(".education__game--inst");
 const introducing = document.querySelector(".about__card-intro");
 const contact = document.querySelector(".about__card-contact");
 const skills = document.querySelector(".about__card-skills");
+const weatherInput = document.querySelector(".about__card-skills");
 const game = document.querySelector(".game-container");
 const instruction = document.querySelector(".instruction-container");
+const display = document.querySelector(".about__card-results");
 
 introducingLink.addEventListener("click", () => {
     introducingLink.classList.add("active");
@@ -20,6 +22,8 @@ introducingLink.addEventListener("click", () => {
     introducing.style.display = "block";
     contact.style.display = "none";
     skills.style.display = "none";
+    weatherInput.style.display = "none";
+    display.style.display = "none";
 });
 
 contactLink.addEventListener("click", () => {
@@ -30,6 +34,8 @@ contactLink.addEventListener("click", () => {
     introducing.style.display = "none";
     contact.style.display = "block";
     skills.style.display = "none";
+    weatherInput.style.display = "none";
+    display.style.display = "none";
 });
 
 skillsLink.addEventListener("click", () => {
@@ -40,6 +46,8 @@ skillsLink.addEventListener("click", () => {
     introducing.style.display = "none";
     contact.style.display = "none";
     skills.style.display = "block";
+    weatherInput.style.display = "block";
+    display.style.display = "none";
 });
 
 gameLink.addEventListener("click", () => {

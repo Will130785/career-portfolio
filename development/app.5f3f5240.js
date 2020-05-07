@@ -253,8 +253,10 @@ var tabs = function tabs() {
   var introducing = document.querySelector(".about__card-intro");
   var contact = document.querySelector(".about__card-contact");
   var skills = document.querySelector(".about__card-skills");
+  var weatherInput = document.querySelector(".about__card-skills");
   var game = document.querySelector(".game-container");
   var instruction = document.querySelector(".instruction-container");
+  var display = document.querySelector(".about__card-results");
   introducingLink.addEventListener("click", function () {
     introducingLink.classList.add("active");
     contactLink.classList.remove("active");
@@ -262,6 +264,8 @@ var tabs = function tabs() {
     introducing.style.display = "block";
     contact.style.display = "none";
     skills.style.display = "none";
+    weatherInput.style.display = "none";
+    display.style.display = "none";
   });
   contactLink.addEventListener("click", function () {
     introducingLink.classList.remove("active");
@@ -270,6 +274,8 @@ var tabs = function tabs() {
     introducing.style.display = "none";
     contact.style.display = "block";
     skills.style.display = "none";
+    weatherInput.style.display = "none";
+    display.style.display = "none";
   });
   skillsLink.addEventListener("click", function () {
     introducingLink.classList.remove("active");
@@ -278,6 +284,8 @@ var tabs = function tabs() {
     introducing.style.display = "none";
     contact.style.display = "none";
     skills.style.display = "block";
+    weatherInput.style.display = "block";
+    display.style.display = "none";
   });
   gameLink.addEventListener("click", function () {
     gameLink.classList.add("active");
@@ -2819,7 +2827,6 @@ var getWeather = function getWeather() {
   var city = document.querySelector(".city-info");
   var region = document.querySelector(".region-info");
   var image = document.querySelector(".image");
-  var textDesc = document.querySelector(".text");
   var temp = document.querySelector(".temp-info");
   var feelsLike = document.querySelector(".feels-like-info");
   var windSpeed = document.querySelector(".wind-speed-info");
@@ -2827,31 +2834,40 @@ var getWeather = function getWeather() {
   var humidity = document.querySelector(".humidity-info");
   var uvRating = document.querySelector(".uv-rating-info");
   var visibility = document.querySelector(".visibility-info");
-  var display = document.querySelector(".display"); //Create event listener for search button
+  var display = document.querySelector(".about__card-results");
+  var weatherInput = document.querySelector(".about__card-skills");
+  var warning = document.querySelector(".search-warning"); //Create event listener for search button
 
   searchBtn.addEventListener("click", function (e) {
     //Prevent default button behaviour
-    e.preventDefault(); //Capture search input
+    e.preventDefault();
 
-    var searchText = searchInput.value; //Call getWeather method and pass in search input
+    if (searchInput.value) {
+      warning.style.display = "none"; //Capture search input
 
-    weather.getWeather(searchText).then(function (res) {
-      //From the result, display data in UI
-      country.textContent = res.location.country;
-      city.textContent = res.location.name;
-      region.textContent = res.location.region;
-      image.innerHTML = "\n            <img src=".concat(res.current.condition.icon, ">\n        ");
-      textDesc.textContent = res.current.condition.text;
-      temp.textContent = res.current.temp_c + " °C";
-      feelsLike.textContent = res.current.feelslike_c + " °C";
-      windSpeed.textContent = res.current.wind_mph + " mph";
-      windDirection.textContent = res.current.wind_dir;
-      humidity.textContent = res.current.humidity + " %";
-      uvRating.textContent = res.current.uv;
-      visibility.textContent = res.current.vis_miles + " miles"; //Show display in UI
+      var searchText = searchInput.value; //Call getWeather method and pass in search input
 
-      display.style.display = "grid";
-    });
+      weather.getWeather(searchText).then(function (res) {
+        //From the result, display data in UI
+        country.textContent = res.location.country;
+        city.textContent = res.location.name;
+        region.textContent = res.location.region;
+        image.innerHTML = "\n            <img class=\"image-pic\" src=".concat(res.current.condition.icon, ">\n        ");
+        temp.textContent = res.current.temp_c + " °C";
+        feelsLike.textContent = res.current.feelslike_c + " °C";
+        windSpeed.textContent = res.current.wind_mph + " mph";
+        windDirection.textContent = res.current.wind_dir;
+        humidity.textContent = res.current.humidity + " %";
+        uvRating.textContent = res.current.uv;
+        visibility.textContent = res.current.vis_miles + " miles"; //Show display in UI
+
+        searchInput.value = "";
+        weatherInput.style.display = "none";
+        display.style.display = "block";
+      });
+    } else {
+      warning.style.display = "block";
+    }
   });
 };
 
@@ -2921,7 +2937,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55049" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49794" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

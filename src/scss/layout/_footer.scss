@@ -1,0 +1,34 @@
+.footer {
+    min-height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    &__right {
+        font-size: 1.2rem;
+
+    }
+
+    &__socials {
+        margin-top: 1rem;
+
+        &--icon {
+            fill: white;
+            height: 3rem;
+            width: 3rem;
+            margin-right: 2rem;
+            transition: all .2s;
+        }
+
+        &--icon:hover {
+            fill: #ffb129;
+            cursor: pointer;
+        }
+    }
+}

@@ -28,7 +28,6 @@ const country = document.querySelector(".country-info");
 const city = document.querySelector(".city-info");
 const region = document.querySelector(".region-info");
 const image = document.querySelector(".image");
-const textDesc = document.querySelector(".text");
 const temp = document.querySelector(".temp-info");
 const feelsLike = document.querySelector(".feels-like-info");
 const windSpeed = document.querySelector(".wind-speed-info");
@@ -36,14 +35,18 @@ const windDirection = document.querySelector(".wind-direction-info");
 const humidity = document.querySelector(".humidity-info");
 const uvRating = document.querySelector(".uv-rating-info");
 const visibility = document.querySelector(".visibility-info");
-const display = document.querySelector(".display");
+const display = document.querySelector(".about__card-results");
+const weatherInput = document.querySelector(".about__card-skills");
+const warning = document.querySelector(".search-warning");
 
 //Create event listener for search button
 searchBtn.addEventListener("click", e => {
     //Prevent default button behaviour
     e.preventDefault();
 
-    //Capture search input
+    if(searchInput.value) {
+        warning.style.display = "none";
+        //Capture search input
     let searchText = searchInput.value;
 
     //Call getWeather method and pass in search input
@@ -55,9 +58,8 @@ searchBtn.addEventListener("click", e => {
         city.textContent = res.location.name;
         region.textContent = res.location.region;
         image.innerHTML = `
-            <img src=${res.current.condition.icon}>
+            <img class="image-pic" src=${res.current.condition.icon}>
         `;
-        textDesc.textContent = res.current.condition.text;
         temp.textContent = res.current.temp_c + " °C";
         feelsLike.textContent = res.current.feelslike_c + " °C";
         windSpeed.textContent = res.current.wind_mph + " mph";
@@ -67,8 +69,14 @@ searchBtn.addEventListener("click", e => {
         visibility.textContent = res.current.vis_miles + " miles";
 
         //Show display in UI
-        display.style.display = "grid";
+        searchInput.value = "";
+        weatherInput.style.display = "none";
+        display.style.display = "block";
     });
+
+    } else {
+        warning.style.display = "block";
+    }
 
 });
 

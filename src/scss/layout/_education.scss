@@ -1,5 +1,5 @@
 .education {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #010304;
 
     //Set grid
@@ -9,6 +9,7 @@
 
     @media only screen and (max-width: 600px) {
         grid-template-rows: repeat(2, 1fr);
+        padding: 5rem;
     }
 
     &__details {
