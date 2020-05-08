@@ -11,6 +11,7 @@
     align-items: center;
     font-size: 1.6rem;
     padding: 0 1rem;
+    overflow: hidden;
 
     &__navbrand {
         margin: 1rem;
@@ -68,6 +69,7 @@
     z-index: 6;
     transition: all 1s;
     padding: 0 1rem;
+    overflow: hidden;
     // padding: 1rem;
 
     &__list {
