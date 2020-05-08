@@ -34,7 +34,8 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     color: white;
-    overscroll-behavior: none;
+    // position: fixed;
+    overflow: hidden;
 }
 
 body:before {
@@ -51,4 +52,11 @@ body:before {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+  }
+
+  body > .mainwrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; /* enables “momentum” (smooth) scrolling */
   }
