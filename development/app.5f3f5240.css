@@ -446,7 +446,7 @@ body:before {
     font-size: 2rem !important;
   }
 }
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
   .modal__content--heading {
     font-size: 1rem !important;
   }
@@ -469,7 +469,7 @@ body:before {
     font-size: 3rem !important;
   }
 }
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
   .modal__content--lead {
     font-size: 2rem !important;
   }
@@ -493,7 +493,7 @@ body:before {
     font-size: 1.5rem !important;
   }
 }
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
   .modal__content--features h2 {
     font-size: 1rem !important;
   }
@@ -513,7 +513,7 @@ body:before {
     font-size: 1.5rem !important;
   }
 }
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
   .modal__content--features p {
     font-size: 1rem !important;
   }
@@ -535,7 +535,7 @@ body:before {
     font-size: 1.5rem;
   }
 }
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
   .modal__content--git-text {
     font-size: 1rem !important;
   }
@@ -557,7 +557,7 @@ body:before {
     font-size: 1.5rem;
   }
 }
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 500px) {
   .modal__content--view-text {
     font-size: 1rem !important;
   }
