@@ -28,6 +28,10 @@ html {
         font-size: 40%;
     }
 
+    @media only screen and (max-width: 450px) {
+        font-size: 35%;
+    }
+
     
 }
 
@@ -35,7 +39,10 @@ body {
     font-family: 'Lato', sans-serif;
     color: white;
     // position: fixed;
-    overflow: hidden;
+
+    @media only screen and (max-width: 500px) {
+        overflow: hidden;
+    }
 }
 
 body:before {
@@ -54,9 +61,11 @@ body:before {
     background-size: cover;
   }
 
-  body > .mainwrapper {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch; /* enables “momentum” (smooth) scrolling */
+  @media only screen and (max-width: 500px) {
+    body > .mainwrapper {
+        width: 100vw;
+        height: 100vh;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch; /* enables “momentum” (smooth) scrolling */
+      }
   }

@@ -294,11 +294,20 @@ html {
     font-size: 40%;
   }
 }
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 35%;
+  }
+}
 
 body {
   font-family: "Lato", sans-serif;
   color: white;
-  overflow: hidden;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    overflow: hidden;
+  }
 }
 
 body:before {
@@ -317,14 +326,15 @@ body:before {
   background-size: cover;
 }
 
-body > .mainwrapper {
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-  /* enables “momentum” (smooth) scrolling */
+@media only screen and (max-width: 500px) {
+  body > .mainwrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    /* enables “momentum” (smooth) scrolling */
+  }
 }
-
 .--u-letter-underline {
   display: inline-block;
   padding-bottom: 1rem;
@@ -384,6 +394,7 @@ body > .mainwrapper {
   position: relative;
   top: 10rem;
   padding: 2rem;
+  box-shadow: 0 1rem 8rem 3rem rgba(255, 255, 255, 0.2);
 }
 @media only screen and (max-width: 900px) {
   .modal__container {
@@ -403,6 +414,11 @@ body > .mainwrapper {
 @media only screen and (max-width: 500px) {
   .modal__container {
     width: 80%;
+  }
+}
+@media only screen and (max-height: 500px) {
+  .modal__container {
+    height: 70%;
   }
 }
 .modal__content {
@@ -425,6 +441,16 @@ body > .mainwrapper {
     font-size: 4rem;
   }
 }
+@media only screen and (max-height: 600px) {
+  .modal__content--heading {
+    font-size: 2rem !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .modal__content--heading {
+    font-size: 1rem !important;
+  }
+}
 .modal__content--lead {
   grid-column: 3/11;
   grid-row: 2/3;
@@ -436,6 +462,16 @@ body > .mainwrapper {
 @media only screen and (max-width: 700px) {
   .modal__content--lead {
     font-size: 4.5rem;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .modal__content--lead {
+    font-size: 3rem !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .modal__content--lead {
+    font-size: 2rem !important;
   }
 }
 .modal__content--features {
@@ -452,6 +488,16 @@ body > .mainwrapper {
     font-size: 2rem;
   }
 }
+@media only screen and (max-height: 600px) {
+  .modal__content--features h2 {
+    font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .modal__content--features h2 {
+    font-size: 1rem !important;
+  }
+}
 .modal__content--features p {
   font-size: 1.6rem;
   font-weight: 300;
@@ -460,6 +506,16 @@ body > .mainwrapper {
 @media only screen and (max-width: 700px) {
   .modal__content--features p {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .modal__content--features p {
+    font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .modal__content--features p {
+    font-size: 1rem !important;
   }
 }
 .modal__content--github {
@@ -479,6 +535,11 @@ body > .mainwrapper {
     font-size: 1.5rem;
   }
 }
+@media only screen and (max-height: 400px) {
+  .modal__content--git-text {
+    font-size: 1rem !important;
+  }
+}
 .modal__content--view {
   grid-column: 7/8;
   grid-row: 11/12;
@@ -494,6 +555,11 @@ body > .mainwrapper {
 @media only screen and (max-width: 700px) {
   .modal__content--view-text {
     font-size: 1.5rem;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .modal__content--view-text {
+    font-size: 1rem !important;
   }
 }
 .modal__content--1 {
