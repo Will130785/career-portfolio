@@ -418,7 +418,7 @@ body:before {
 }
 @media only screen and (max-height: 500px) {
   .modal__container {
-    height: 70%;
+    height: 65%;
   }
 }
 .modal__content {
@@ -451,6 +451,11 @@ body:before {
     font-size: 1rem !important;
   }
 }
+@media only screen and (max-height: 400px) {
+  .modal__content--heading {
+    font-size: 0.5rem !important;
+  }
+}
 .modal__content--lead {
   grid-column: 3/11;
   grid-row: 2/3;
@@ -472,6 +477,11 @@ body:before {
 @media only screen and (max-height: 500px) {
   .modal__content--lead {
     font-size: 2rem !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .modal__content--lead {
+    font-size: 1.5rem !important;
   }
 }
 .modal__content--features {
@@ -498,6 +508,11 @@ body:before {
     font-size: 1rem !important;
   }
 }
+@media only screen and (max-height: 400px) {
+  .modal__content--features h2 {
+    font-size: 0.5rem !important;
+  }
+}
 .modal__content--features p {
   font-size: 1.6rem;
   font-weight: 300;
@@ -516,6 +531,11 @@ body:before {
 @media only screen and (max-height: 500px) {
   .modal__content--features p {
     font-size: 1rem !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .modal__content--features p {
+    font-size: 0.5rem !important;
   }
 }
 .modal__content--github {
@@ -540,6 +560,11 @@ body:before {
     font-size: 1rem !important;
   }
 }
+@media only screen and (max-height: 400px) {
+  .modal__content--git-text {
+    font-size: 0.5rem !important;
+  }
+}
 .modal__content--view {
   grid-column: 7/8;
   grid-row: 11/12;
@@ -560,6 +585,11 @@ body:before {
 @media only screen and (max-height: 500px) {
   .modal__content--view-text {
     font-size: 1rem !important;
+  }
+}
+@media only screen and (max-height: 400px) {
+  .modal__content--view-text {
+    font-size: 0.5rem !important;
   }
 }
 .modal__content--1 {
@@ -680,12 +710,18 @@ body:before {
   .about {
     grid-template-rows: repeat(2, 1fr);
     padding: 5rem;
+    grid-row-gap: 10rem;
   }
 }
 .about__desc {
   font-size: 1.6rem;
   font-weight: 300;
   margin-top: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .about__desc {
+    font-size: 2rem;
+  }
 }
 .about__overview {
   display: flex;
@@ -721,6 +757,11 @@ body:before {
 .about__title {
   font-size: 5rem;
   font-weight: 100;
+}
+@media only screen and (max-width: 800px) {
+  .about__title {
+    font-size: 7rem;
+  }
 }
 .about__title--top {
   display: block;
@@ -792,17 +833,37 @@ body:before {
   margin-bottom: 1rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 800px) {
+  .about__card-intro h2 {
+    font-size: 2rem;
+  }
+}
 .about__card-intro :nth-child(2) {
   font-size: 3.5rem;
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 800px) {
+  .about__card-intro :nth-child(2) {
+    font-size: 4rem;
+  }
 }
 .about__card-intro :nth-child(3) {
   font-size: 1.5rem;
   font-weight: 300;
 }
+@media only screen and (max-width: 800px) {
+  .about__card-intro :nth-child(3) {
+    font-size: 2rem;
+  }
+}
 .about__card-intro :nth-child(5) {
   font-size: 1.5rem;
   font-weight: 300;
+}
+@media only screen and (max-width: 800px) {
+  .about__card-intro :nth-child(5) {
+    font-size: 2rem;
+  }
 }
 .about__card-contact {
   font-weight: 100;

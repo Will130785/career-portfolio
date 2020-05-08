@@ -12,6 +12,7 @@
     @media only screen and (max-width: 800px) {
         grid-template-rows: repeat(2, 1fr);
         padding: 5rem;
+        grid-row-gap: 10rem;
     }
 
 
@@ -20,6 +21,10 @@
         font-size: 1.6rem;
         font-weight: 300;
         margin-top: 2rem;
+
+        @media only screen and (max-width: 800px) {
+            font-size: 2rem;
+        }
     }
 
     //Overview details
@@ -68,6 +73,10 @@
     &__title {
         font-size: 5rem;
         font-weight: 100;
+
+        @media only screen and (max-width: 800px) {
+            font-size: 7rem;
+        }
 
         //Split name into two rows
         &--top {
@@ -171,21 +180,37 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
             font-weight: 300;
+
+            @media only screen and (max-width: 800px) {
+                font-size: 2rem;
+            }
         }
 
         :nth-child(2) {
             font-size: 3.5rem;
             margin-bottom: 3rem;
+
+            @media only screen and (max-width: 800px) {
+                font-size: 4rem;
+            }
         }
 
         :nth-child(3) {
             font-size: 1.5rem;
             font-weight: 300;
+
+            @media only screen and (max-width: 800px) {
+                font-size: 2rem;
+            }
         }
 
         :nth-child(5) {
             font-size: 1.5rem;
             font-weight: 300;
+
+            @media only screen and (max-width: 800px) {
+                font-size: 2rem;
+            }
         }
         
     }
