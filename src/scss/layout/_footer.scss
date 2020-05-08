@@ -4,14 +4,24 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2rem;
 
     &__left {
         font-size: 2rem;
         font-weight: 300;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.5rem;
+        }
+
     }
 
     &__right {
         font-size: 1.2rem;
+
+        @media only screen and (max-width: 350px) {
+            font-size: 1rem;
+        }
 
     }
 
@@ -24,6 +34,11 @@
             width: 3rem;
             margin-right: 2rem;
             transition: all .2s;
+
+            @media only screen and (max-width: 600px) {
+                height: 2rem;
+                width: 2rem;
+            }
         }
 
         &--icon:hover {

@@ -101,18 +101,28 @@
         grid-row: 1 / 2;
         grid-column: 1 / -1;
         font-size: 2.2rem;
-        font-weight: 100;
+        font-weight: 300;
         margin-top: -2rem;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 3rem;
+            font-weight: 300;
+        }
     }
 
     &__group {
         font-size: 1.4rem;
-        font-weight: 300;
+        font-weight: normal;
 
         display: flex;
         align-items: center;
         margin-bottom: 1rem;
         transition: all .2s;
+
+        @media only screen and (max-width: 600px) {
+            font-size: 1.6rem;
+            font-weight: normal;
+        }
 
         &--1 {
             grid-row: 2 / 3;
@@ -155,4 +165,9 @@
     height: 2.5rem;
     width: 2.5rem;
     margin-right: 2rem;
+
+    @media only screen and (max-width: 600px) {
+       height: 3.5rem;
+       width: 3.5rem;
+    }
 }
