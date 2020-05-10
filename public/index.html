@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
+<!-- Main wrapper to ensure that page still scrolls when overflow is hidden on body to prevent scroll bounce on mobile devices -->
 <div class="mainwrapper">
     <!-- Navbar section -->
+    <!-- Main desktop navbar -->
     <nav id="nav" class="navbar">
         <div class="navbar__navbrand">
             <a href="" class="navbar__navbrand--link">Will Constable</a>
@@ -36,6 +39,8 @@
             </ul>
         </div>
 
+
+        <!-- Main desktop hamburger -->
         <div class="hamburger">
             <span class="hamburger__top"></span>
             <span class="hamburger__middle"></span>
@@ -65,6 +70,8 @@
                 <a href="" class="mobile-nav__list--link">Skills</a>
             </li>
 
+
+            <!-- Mobile navbar hamburger -->
             <div class="hamburger hamburger-mob">
                 <span class="hamburger__top"></span>
                 <span class="hamburger__middle"></span>
@@ -89,6 +96,8 @@
 
         <!-- About section -->
         <section class="about">
+
+            <!-- Overview details / name, title and social links-->
             <div class="about__overview">
                 <h2 class="about__title">
                     <span class="about__title--top">Will</span>
@@ -96,6 +105,7 @@
                 </h2>
                 <p class="about__desc">Full stack web and softwate developer based in London</p>
 
+                <!-- SVG icons for social media links -->
                 <div class="about__overview--icons">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon">
                         <use href="../src/img/sprite2.svg#icon-linkedin-square"></use>
@@ -115,11 +125,16 @@
                 </div>
             </div>
 
+
+            <!-- About section content -->
             <div class="about__content">
+
+                <!-- About section tabs / For selecting the different cards -->
                 <span class="about__content--intro active">Introducing</span>
                 <span class="about__content--contact">Contact</span>
                 <span class="about__content--skills">Demo</span>
 
+                <!-- introfuctin card -->
                 <div class="card about__card-intro">
                     <h2>- Introducing</h2>
                     <p>A passionate developer, specialising in front and backend web develpment</p>
@@ -128,6 +143,7 @@
 
                 </div>
 
+                <!-- contact detail card-->
                 <div class="card about__card-contact">
                     <h2>- Contact</h2>
                     <p>Get in contact via any method on this site</p>
@@ -135,6 +151,7 @@
                     <p>Email: will_constable@msn.com</p>
                 </div>
 
+                <!-- Skills card - now changed to weather api demo -->
                 <div class="card about__card-skills">
                     <h2>- Weather</h2>
                     <p>Search for the latest weather details in any city</p>
@@ -146,108 +163,76 @@
                     <p class="search-warning">Please enter a city</p>
                 </div>
 
+                <!-- Weather search result card -->
                 <div class="card about__card-results">
                     <div class="weather-container">
-                        <!-- Main title -->
-                        <!-- <h1>Weather Info</h1> -->
-                
-                        <!-- City search input
-                        <form class="search-form">
-                            <input type="text" class="search" placeholder="Enter city name">
-                            <button class="search-btn">Search</button>
-                        </form> -->
-                
+                       
                         <!-- Weather Display -->
                         <div class="display">
                 
-                            <!-- Individual info displays -->
+                            <!-- Individual info displays for each item of data -->
+                            <!-- country info -->
                             <div class="country">
                                 <h2>Country</h2>
                                 <span class="country-info"></span>
-                
                             </div>
-                            
+                            <!-- City info -->
                             <div class="city">
                                 <h2>City</h2>
                                 <span class="city-info"></span>
-                
                             </div>
-                
+                            <!-- Region info -->
                             <div class="region">
                                 <h2>Region</h2>
                                 <span class="region-info"></span>
-                
                             </div>
-                
+                            <!-- Current weather status image -->
                             <div class="image">
                 
                             </div>
-                
-                            <!-- <div class="text">
-                
-                            </div> -->
-                
+                            <!-- Temperature info -->
                             <div class="temp">
                                 <h2>Temperature</h2>
                                 <span class="temp-info"></span>
-                
                             </div>
-                
+                            <!-- Feels like info -->
                             <div class="feels-like">
                                 <h2>Feels like</h2>
                                 <span class="feels-like-info"></span>
-                
                             </div>
-                
+                            <!-- Wind speed info-->
                             <div class="wind-speed">
                                 <h2>Wind spd</h2>
                                 <span class="wind-speed-info"></span>
-                
                             </div>
-                
+                            <!-- Wind direction info -->
                             <div class="wind-direction">
                                 <h2>Wind dir</h2>
                                 <span class="wind-direction-info"></span>
-                
                             </div>
-                
+                            <!-- Humidity info -->
                             <div class="humidity">
                                 <h2>Humidity</h2>
                                 <span class="humidity-info"></span>
-                
                             </div>
-                
+                            <!-- UV info -->
                             <div class="uv-rating">
                                 <h2>UV rating</h2>
                                 <span class="uv-rating-info"></span>
-                
                             </div>
-                
+                            <!-- visibility info -->
                             <div class="visibility">
                                 <h2>Visibility</h2>
                                 <span class="visibility-info"></span>
-                
                             </div>
-                
                         </div>
-                
-                
-                
-                
                     </div>
-
                 </div>
-
             </div>
-
-
-               
-
         </section>
 
         <!-- Portfolio section -->
         <section class="portfolio">
-
 
             <!-- Individual portfolio cards -->
             <div class="portfolio__card portfolio__card--1">
@@ -288,8 +273,9 @@
 
         </section>
 
+        <!-- Education and game section -->
         <section class="education">
-
+            <!-- Education details section-->
             <div class="education__details">
                 <h2>- Courses completed</h2>
                 <p class="education__details--blurb"><span class="--u-letter-underline">E</span>mbarked on and completed the following courses, the fuel behind my skills.</p>
@@ -299,59 +285,48 @@
                 <p class="education__details--course">Udemy - Advanced CSS and Sass</p>
                 <p class="education__details--course">Udemy - Modern JavaScript From The Beginning</p>
                 <p class="education__details--course">Udemy - The Modern React Bootcamp</p>
-
-
             </div>
 
+            <!-- Color game -->
             <div class="education__game">
-               
+                <!-- Game section tabs for instructions or the game itself -->
                 <span class="education__game--game active">Game</span>
                 <span class="education__game--inst">Instructions</span>
 
+                <!-- main game container -->
                 <div class="game-container card-ed">
                     <!-- Head section content -->
                     <div class="head-section">
-                    <!-- Title -->
-                    <h1 class="heading">The RGB Color Game</h1>
-                    <!-- Color display -->
-                    <h3 id="color-display">RGB</h2>
+                        <!-- Title -->
+                        <h1 class="heading">The RGB Color Game</h1>
+                        <!-- Color display -->
+                        <h3 id="color-display">RGB</h2>
+                    </div>
 
+                    <!-- game circles -->
+                    <div class="game-board">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
                 </div>
 
-        <!-- Game bar componenents-->
-        <!-- <div class="game-bar">
-         New game button
-        <button class="btn" id="new-game">New Colors</button>
-         Game status message display
-        <div class="message" id="game-message"></div>
-        </div> -->
-
-        <!-- game squares -->
-        <div class="game-board">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-
-        </div>
-    </div>
-
-    <div class="instruction-container card-ed">
-        <h2>- Just for fun</h2>
-        <p class="instruction-container__blurb">Have a go of the RGB color game and see if you can match the value</p>
-        <p class="instruction-container__desc">Match the colored circle with the RGB value desiplayed</p>
-        <p class="education__game--new">Match the coloured circle to the RGB value or click <span class="--u-letter-underline new-colors">here</span> for new colors</p>
-    </div>
-
-
+                <!-- game instructions card-->
+                <div class="instruction-container card-ed">
+                    <h2>- Just for fun</h2>
+                    <p class="instruction-container__blurb">Have a go of the RGB color game and see if you can match the value</p>
+                    <p class="instruction-container__desc">Match the colored circle with the RGB value desiplayed</p>
+                    <p class="education__game--new">Match the coloured circle to the RGB value or click <span class="--u-letter-underline new-colors">here</span> for new colors</p>
+                </div>
             </div>
-
         </section>
 
+        <!-- Skills section -->
         <section class="skill-sec">
-
+            <!-- Skill cards -->
             <!-- Front end skills -->
             <div class="skill-sec__card skill-sec__card--front">
                 <h3 class="skill-sec__title"><span class="--u-letter-underline">F</span>rontend skills</h3>
@@ -360,7 +335,6 @@
                         <use href="../src/img/sprite.svg#icon-html5">/use>
                     </svg>
                     <span>HTML 5</span>
-
                 </div>
 
                 <div class="skill-sec__group skill-sec__group--2">
@@ -528,23 +502,18 @@
                         <use href="../src/img/sprite.svg#icon-heroku">/use>
                     </svg>
                     <span>Heroku</span>
-
                 </div>
-
             </div>
-
         </section>
 
+    <!-- End of main site container -->
     </main>
 
 
     <!-- Portfolio section modal -->
     <section class="modal">
-
         <!-- Overall modal container -->
         <div class="modal__container">
-
-
             <!-- individual modal items -->
             <div class="modal__content modal__content--1">
                 <h1 class="modal__content--heading">Out-N-In</h1>
@@ -773,19 +742,18 @@
                         <use href="../src/img/sprite2.svg#icon-github"></use>
                     </svg>
                     <span class="modal__content--view-text">View Project</span>
-
             </div>
-
         </div>
-
     </section>
 
+    <!-- Footer section -->
     <section class="footer">
-
+        <!-- Left side of footer content-->
         <div class="footer__left">
 
             Find me @
 
+            <!-- Social media links and SVG's-->
             <div class="footer__socials">
                 <svg xmlns="http://www.w3.org/2000/svg" class="footer__socials--icon">
                     <use href="../src/img/sprite3.svg#icon-linkedin-square"></use>
@@ -814,20 +782,20 @@
 
         </div>
 
+        <!-- Footer right side content -->
         <div class="footer__right">
             &copy; 2020 Will Constable
-
         </div>
-
     </section>
 </div>
-</div>
 
+    <!-- Scripts -->
     <script src="../src/js/app.js"></script>
 </body>
 </html>
 
 
+<!-- SVG items -->
  <!-- <div class="about__skills">
                      Individual icon SVG's
                 <div class="about__skills--icons">

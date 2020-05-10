@@ -1,3 +1,4 @@
+//Global reset
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +6,10 @@
 }
 
 html {
+    //Set root font size
     font-size: 62.5%; // 1rem = 10px
 
-    //Root font media queries
+    //Alter root font size as screen width gets smaller
     @media only screen and (max-width: 1200px) {
         font-size: 60%;
     }
@@ -38,13 +40,14 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     color: white;
-    // position: fixed;
 
-    @media only screen and (max-width: 500px) {
+    //At 500px and below set overflow to hidden in order to get rid of the scroll bounce effect on the navbar
+    @media only screen and (max-width: 1024px) {
         overflow: hidden;
     }
 }
 
+//Place psuedo element on the body to create a parallax scrolling effect
 body:before {
     content: "";
     display: block;
@@ -61,7 +64,8 @@ body:before {
     background-size: cover;
   }
 
-  @media only screen and (max-width: 500px) {
+  //Add to main wrapper at 500px or below in order to still be able to scroll through entire site once the overflow on the body has been set to hidden
+  @media only screen and (max-width: 1024px) {
     body > .mainwrapper {
         width: 100vw;
         height: 100vh;

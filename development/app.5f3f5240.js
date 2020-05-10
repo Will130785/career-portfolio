@@ -232,6 +232,34 @@ var animation = function animation() {
     document.querySelector(".landing__title").classList.toggle("title-animation");
     document.querySelector(".landing__sub").classList.toggle("sub-animation");
   }, 4000);
+  setTimeout(function () {
+    setTimeout(function () {
+      document.querySelector(".landing__title").innerHTML = "Software Developer";
+      document.querySelector(".landing__sub").innerHTML = "Will Constable";
+    }, 6000);
+    setTimeout(function () {
+      document.querySelector(".landing__title").innerHTML = "Web Developer";
+      document.querySelector(".landing__sub").innerHTML = "Based in London";
+    }, 12000);
+    setTimeout(function () {
+      document.querySelector(".landing__title").innerHTML = "Hi, I'm Will";
+      document.querySelector(".landing__sub").innerHTML = "Full Stack Web Developer";
+    }, 18000);
+  }, 6000);
+  setInterval(function () {
+    setTimeout(function () {
+      document.querySelector(".landing__title").innerHTML = "Software Developer";
+      document.querySelector(".landing__sub").innerHTML = "Will Constable";
+    }, 6000);
+    setTimeout(function () {
+      document.querySelector(".landing__title").innerHTML = "Web Developer";
+      document.querySelector(".landing__sub").innerHTML = "Based in London";
+    }, 12000);
+    setTimeout(function () {
+      document.querySelector(".landing__title").innerHTML = "Hi, I'm Will";
+      document.querySelector(".landing__sub").innerHTML = "Full Stack Web Developer";
+    }, 18000);
+  }, 24000);
 };
 
 exports.animation = animation;
@@ -2937,7 +2965,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58901" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52836" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

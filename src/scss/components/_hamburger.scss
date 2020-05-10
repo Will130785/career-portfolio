@@ -1,18 +1,22 @@
+//Hamburger button styling
 .hamburger {
     cursor: pointer;
     height: 3.5rem;
     width: 3.5rem;
     border: 2px solid white;
+    //Start hidden
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: all .3s;
 
+    //Only at 900px or below should the hamburger be displayed
     @media only screen and (max-width: 900px) {
         display: flex;
     }
 
+    //Hamburger line settings
     span {
         width: 2.4rem;
         display: block;
@@ -34,6 +38,7 @@
     }
 }
 
+//Set hover behaviour
 .hamburger:hover {
     border: 2px solid #ffb129;
 
@@ -42,6 +47,7 @@
     }
 }
 
+//Set position of the mobile navbar hamburger
 .hamburger-mob {
     position: absolute;
     right: 0;
