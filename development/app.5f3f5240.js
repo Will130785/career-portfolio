@@ -350,7 +350,7 @@ var hamburger = function hamburger() {
     burger.addEventListener("click", function (e) {
       if (navbarActive === 0) {
         // navBar.style.display = "none"
-        mobileNav.style.height = "125px";
+        mobileNav.style.height = "23rem";
         mobileNavLinks.forEach(function (link) {
           link.style.display = "block";
         });
@@ -364,6 +364,13 @@ var hamburger = function hamburger() {
 
         navbarActive = 0;
       }
+    });
+  });
+  mobileNavLinks.forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      navBar.style.display = "flex";
+      mobileNav.style.height = "0px";
+      navbarActive = 0;
     });
   });
 };
@@ -568,25 +575,6 @@ var colorGame = function colorGame() {
 };
 
 exports.colorGame = colorGame;
-},{}],"../src/js/mobile-nav-links.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.closeMobNav = void 0;
-
-var closeMobNav = function closeMobNav() {
-  var navLinks = document.querySelectorAll(".mobile-nav__list--link");
-  navLinks.forEach(function (link) {
-    link.addEventListener("click", function (e) {
-      navBar.style.display = "flex";
-      mobileNav.style.height = "0px";
-    });
-  });
-};
-
-exports.closeMobNav = closeMobNav;
 },{}],"../node_modules/regenerator-runtime/runtime.js":[function(require,module,exports) {
 /**
  * Copyright (c) 2014-present, Facebook, Inc.
@@ -2916,8 +2904,6 @@ var _modal = require("./modal");
 
 var _colorGame = require("./color-game");
 
-var _mobileNavLinks = require("./mobile-nav-links");
-
 var _weather = require("./weather");
 
 //Execute navbar scrolling effect
@@ -2927,16 +2913,14 @@ var _weather = require("./weather");
 
 (0, _tabs.tabs)(); //Execute event listeners for hamburger
 
-(0, _hamburger.hamburger)(); //Execute event listener on mobile nav links
-
-(0, _mobileNavLinks.closeMobNav)(); //Execute event listeners for modal
+(0, _hamburger.hamburger)(); //Execute event listeners for modal
 
 (0, _modal.modal)(); //Execute get weather function
 
 (0, _weather.getWeather)(); //Initiate color game
 
 (0, _colorGame.colorGame)();
-},{"../scss/main.scss":"../src/scss/main.scss","./navbar-scroll":"../src/js/navbar-scroll.js","./animation":"../src/js/animation.js","./tabs":"../src/js/tabs.js","./hamburger":"../src/js/hamburger.js","./modal":"../src/js/modal.js","./color-game":"../src/js/color-game.js","./mobile-nav-links":"../src/js/mobile-nav-links.js","./weather":"../src/js/weather.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../scss/main.scss":"../src/scss/main.scss","./navbar-scroll":"../src/js/navbar-scroll.js","./animation":"../src/js/animation.js","./tabs":"../src/js/tabs.js","./hamburger":"../src/js/hamburger.js","./modal":"../src/js/modal.js","./color-game":"../src/js/color-game.js","./weather":"../src/js/weather.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -2964,7 +2948,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53457" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53962" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

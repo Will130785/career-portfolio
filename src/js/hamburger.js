@@ -6,6 +6,7 @@ const mobileNavContent = document.querySelector(".mobile-nav__list");
 const mobileNavLinks = document.querySelectorAll(".mobile-nav__list--link");
 const navBar = document.querySelector(".navbar");
 
+
 let navbarActive = 0;
 
 hamburger.forEach((burger) => {
@@ -13,7 +14,7 @@ hamburger.forEach((burger) => {
     burger.addEventListener("click", e => {
         if(navbarActive === 0) {
             // navBar.style.display = "none"
-            mobileNav.style.height = "125px";
+            mobileNav.style.height = "23rem";
             mobileNavLinks.forEach(link => {
                 link.style.display = "block";
             });
@@ -29,6 +30,16 @@ hamburger.forEach((burger) => {
             navbarActive = 0;
         }
     });
+
+});
+
+mobileNavLinks.forEach(link => {
+
+    link.addEventListener("click", e => {
+        navBar.style.display = "flex";
+        mobileNav.style.height = "0px";
+        navbarActive = 0;
+    })
 
 });
 }  

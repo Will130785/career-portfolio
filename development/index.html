@@ -14,25 +14,25 @@
     <!-- Main desktop navbar -->
     <nav id="nav" class="navbar">
         <div class="navbar__navbrand">
-            <a href="" class="navbar__navbrand--link">Will Constable</a>
+            <a href="#home" class="navbar__navbrand--link">Will Constable</a>
         </div>
 
         <div class="navbar__collapse">
             <ul class="navbar__list">
                 <li class="navbar__list--item">
-                    <a href="" class="navbar__list--link">About</a>
+                    <a href="#about" class="navbar__list--link">About</a>
                 </li>
 
                 <li class="navbar__list--item">
-                    <a href="" class="navbar__list--link">Portfolio</a>
+                    <a href="#portfolio" class="navbar__list--link">Portfolio</a>
                 </li>
 
                 <li class="navbar__list--item">
-                    <a href="" class="navbar__list--link">Education</a>
+                    <a href="#education" class="navbar__list--link">Education</a>
                 </li>
 
                 <li class="navbar__list--item">
-                    <a href="" class="navbar__list--link">Skills</a>
+                    <a href="#skills" class="navbar__list--link">Skills</a>
                 </li>
 
                 
@@ -52,22 +52,22 @@
     <nav id="mobile-nav" class="mobile-nav">
         <ul class="mobile-nav__list">
             <li class="mobile-nav__list--item">
-                <a href="" class="mobile-nav__list--link">Will Constable</a>
+                <a href="#home" class="mobile-nav__list--link">Will Constable</a>
             </li>
             <li class="mobile-nav__list--item">
-                <a href="" class="mobile-nav__list--link">About</a>
-            </li>
-
-            <li class="mobile-nav__list--item">
-                <a href="" class="mobile-nav__list--link">Portfolio</a>
+                <a href="#about" class="mobile-nav__list--link">About</a>
             </li>
 
             <li class="mobile-nav__list--item">
-                <a href="" class="mobile-nav__list--link">Education</a>
+                <a href="#portfolio" class="mobile-nav__list--link">Portfolio</a>
             </li>
 
             <li class="mobile-nav__list--item">
-                <a href="" class="mobile-nav__list--link">Skills</a>
+                <a href="#education" class="mobile-nav__list--link">Education</a>
+            </li>
+
+            <li class="mobile-nav__list--item">
+                <a href="#skills" class="mobile-nav__list--link">Skills</a>
             </li>
 
 
@@ -87,7 +87,7 @@
     <main>
 
         <!-- landing section -->
-        <section class="landing parallax">
+        <section id="home" class="landing parallax">
             <div class="heading">
                 <h1 class="landing__title">Hi, I'm Will</h1>
                 <h2 class="landing__sub">Full stack web developer</h2>
@@ -95,7 +95,7 @@
         </section>
 
         <!-- About section -->
-        <section class="about">
+        <section id="about" class="about">
 
             <!-- Overview details / name, title and social links-->
             <div class="about__overview">
@@ -232,7 +232,7 @@
         </section>
 
         <!-- Portfolio section -->
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
 
             <!-- Individual portfolio cards -->
             <div class="portfolio__card portfolio__card--1">
@@ -274,7 +274,7 @@
         </section>
 
         <!-- Education and game section -->
-        <section class="education">
+        <section id="education" class="education">
             <!-- Education details section-->
             <div class="education__details">
                 <h2>- Courses completed</h2>
@@ -325,7 +325,7 @@
         </section>
 
         <!-- Skills section -->
-        <section class="skill-sec">
+        <section id="skills" class="skill-sec">
             <!-- Skill cards -->
             <!-- Front end skills -->
             <div class="skill-sec__card skill-sec__card--front">
@@ -528,16 +528,20 @@
                     <p>- Ability to add items to a cart</p>
                     <p>- Functionality developed with JavaScript</p>
                 </div>
-
+                    <a class="modal__content--github" href="https://github.com/Will130785/out-n-in" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View Repo</span>
 
+                    <a class="modal__content--view" href="https://hardcore-johnson-7e6043.netlify.app/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
+                    
 
             </div>
 
@@ -553,15 +557,20 @@
                     <p>- Animated hover features</p>
                 </div>
 
+                    <a class="modal__content--github" href="https://github.com/Will130785/Colmar-Two" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View Repo</span>
 
+                    <a class="modal__content--view" href="https://awesome-cray-0e4a93.netlify.app/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
+                    
 
             </div>
 
@@ -578,16 +587,20 @@
                     <p>- User details, posts and comments stored in a MongoDB database</p>
                     <p>- Flash alerts</p>
                 </div>
-
+                    <a class="modal__content--github" href="https://github.com/Will130785/destinate" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View Repo</span>
 
+                    <a class="modal__content--view" href="https://arcane-scrubland-15078.herokuapp.com/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
+                    
 
             </div>
 
@@ -604,15 +617,18 @@
                     <p>- Built using parcel and transpiled with babel</p>
                     <p>- SCSS</p>
                 </div>
-
+                    <a class="modal__content--github" href="https://github.com/Will130785/memory-cards" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View Repo</span>
 
+                    <a class="modal__content--view" href="https://will130785.github.io/memory-cards/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
 
             </div>
@@ -629,15 +645,17 @@
                     <p>- Search triggers an HTTP request to the GitHub API</p>
                     <p>- HTTP request made using Fetch</p>
                 </div>
-
+                    <a class="modal__content--github" href="https://github.com/Will130785/github-finder-v2" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View Repo</span>
-
+                    <a class="modal__content--view" href="https://gifted-wiles-41654d.netlify.app/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
 
             </div>
@@ -656,15 +674,17 @@
                     <p>- Add movies to wishlist or collection</p>
                     <p>- Wishlist and collection items persisted to local storage</p>
                 </div>
-
+                    <a class="modal__content--github" href="https://github.com/Will130785/movie-collection" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View Repo</span>
-
+                    <a class="modal__content--view" href="https://will130785.github.io/movie-collection/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
 
             </div>
@@ -681,15 +701,17 @@
                     <p>- CSS animations</p>
                     <p>- Custom grid system</p>
                 </div>
-
+                    <a class="modal__content--github" href="https://github.com/Will130785/furnish" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View Repo</span>
-
+                    <a class="modal__content--view" href="https://peaceful-lovelace-36e99e.netlify.app/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
 
             </div>
@@ -707,15 +729,17 @@
                     <p>- HTTP request to the mealDB API using fetch</p>
                     <p>- Second HTTP request using id to fetch specific meal details</p>
                 </div>
-
+                    <a class="modal__content--github" href="https://github.com/Will130785/meal-finder" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View Repo</span>
-
+                    <a class="modal__content--view" href="https://will130785.github.io/meal-finder/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
 
             </div>
@@ -732,15 +756,17 @@
                     <p>- User can filter items</p>
                     <p>- Bootstrap</p>
                 </div>
-
+                    <a class="modal__content--github" href="https://github.com/Will130785/shopping-list" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--github">
                         <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--git-text">View GitHub repositiory</span>
-
+                    <a class="modal__content--view" href="https://will130785.github.io/shopping-list/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="about__overview--icon modal__content--view">
-                        <use href="/sprite2.db2ae5cf.svg#icon-github"></use>
+                        <use href="/sprite4.50a6bbd9.svg#icon-eye"></use>
                     </svg>
+                    </a>
                     <span class="modal__content--view-text">View Project</span>
             </div>
         </div>

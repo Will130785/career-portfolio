@@ -5,7 +5,6 @@ import { tabs } from "./tabs";
 import { hamburger } from "./hamburger";
 import { modal } from "./modal";
 import { colorGame } from "./color-game";
-import { closeMobNav } from "./mobile-nav-links";
 import { getWeather } from "./weather";
 
 //Execute navbar scrolling effect
@@ -16,8 +15,6 @@ animation();
 tabs();
 //Execute event listeners for hamburger
 hamburger();
-//Execute event listener on mobile nav links
-closeMobNav();
 //Execute event listeners for modal
 modal();
 //Execute get weather function

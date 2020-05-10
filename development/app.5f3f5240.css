@@ -309,6 +309,11 @@ html {
     font-size: 35%;
   }
 }
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 30%;
+  }
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -383,7 +388,7 @@ body:before {
 .hamburger-mob {
   position: absolute;
   right: 0;
-  top: 2.3rem;
+  top: 2.2rem;
 }
 
 .modal {
@@ -456,9 +461,14 @@ body:before {
     font-weight: normal;
   }
 }
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 800px) {
   .modal__content--heading {
     font-size: 2rem !important;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .modal__content--heading {
+    font-size: 1.6rem !important;
   }
 }
 @media only screen and (max-height: 500px) {
@@ -489,9 +499,14 @@ body:before {
     font-weight: 300;
   }
 }
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 800px) {
   .modal__content--lead {
     font-size: 3rem !important;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .modal__content--lead {
+    font-size: 2.5rem !important;
   }
 }
 @media only screen and (max-height: 500px) {
@@ -523,9 +538,14 @@ body:before {
     font-weight: normal;
   }
 }
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 800px) {
   .modal__content--features h2 {
     font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .modal__content--features h2 {
+    font-size: 1.2rem !important;
   }
 }
 @media only screen and (max-height: 500px) {
@@ -553,9 +573,14 @@ body:before {
     font-weight: normal;
   }
 }
-@media only screen and (max-height: 600px) {
+@media only screen and (max-height: 800px) {
   .modal__content--features p {
     font-size: 1.5rem !important;
+  }
+}
+@media only screen and (max-height: 700px) {
+  .modal__content--features p {
+    font-size: 1.2rem !important;
   }
 }
 @media only screen and (max-height: 500px) {
@@ -578,7 +603,6 @@ body:before {
   font-size: 1.2rem;
   font-weight: 300;
   position: relative;
-  left: -2rem;
 }
 @media only screen and (max-width: 800px) {
   .modal__content--git-text {
@@ -606,7 +630,6 @@ body:before {
   font-size: 1.2rem;
   font-weight: 300;
   position: relative;
-  left: -2rem;
 }
 @media only screen and (max-width: 800px) {
   .modal__content--view-text {
@@ -713,7 +736,7 @@ body:before {
   display: none;
   list-style: none;
   position: relative;
-  padding-top: 1.5rem;
+  padding-top: 1.55rem;
   transition: all 2s;
 }
 .mobile-nav__list--item {
