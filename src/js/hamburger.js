@@ -12,8 +12,8 @@ hamburger.forEach((burger) => {
 
     burger.addEventListener("click", e => {
         if(navbarActive === 0) {
-            navBar.style.display = "none"
-            mobileNav.style.height = "200px";
+            // navBar.style.display = "none"
+            mobileNav.style.height = "125px";
             mobileNavLinks.forEach(link => {
                 link.style.display = "block";
             });
@@ -23,12 +23,12 @@ hamburger.forEach((burger) => {
             navBar.style.display = "flex";
             mobileNav.style.height = "0px";
             mobileNavLinks.forEach(link => {
-                link.style.display = "none";
+            // link.style.display = "none";
             });
-            mobileNavContent.style.display = "none";
+            // mobileNavContent.style.display = "none";
             navbarActive = 0;
         }
     });
 
 });
-}
+}  

@@ -260,6 +260,16 @@
     transform: translateY(0);
   }
 }
+@keyframes mobileNavLinksFade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20rem);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -401,7 +411,7 @@ body:before {
     width: 60%;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .modal__container {
     width: 65%;
   }
@@ -416,7 +426,7 @@ body:before {
     width: 80%;
   }
 }
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 900px) {
   .modal__container {
     height: 65%;
   }
@@ -436,9 +446,14 @@ body:before {
   font-size: 3rem;
   padding-top: 1rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .modal__content--heading {
-    font-size: 4rem;
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .modal__content--heading {
+    font-weight: normal;
   }
 }
 @media only screen and (max-height: 600px) {
@@ -464,9 +479,14 @@ body:before {
   margin: 2rem 0 0 0;
   line-height: 0.8;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .modal__content--lead {
-    font-size: 4.5rem;
+    font-size: 3rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .modal__content--lead {
+    font-weight: 300;
   }
 }
 @media only screen and (max-height: 600px) {
@@ -493,9 +513,14 @@ body:before {
   font-weight: 300;
   margin-bottom: 1rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .modal__content--features h2 {
-    font-size: 2rem;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .modal__content--features h2 {
+    font-weight: normal;
   }
 }
 @media only screen and (max-height: 600px) {
@@ -518,9 +543,14 @@ body:before {
   font-weight: 300;
   line-height: 1.5;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .modal__content--features p {
-    font-size: 2rem;
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .modal__content--features p {
+    font-weight: normal;
   }
 }
 @media only screen and (max-height: 600px) {
@@ -550,9 +580,10 @@ body:before {
   position: relative;
   left: -2rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .modal__content--git-text {
-    font-size: 1.5rem;
+    font-weight: normal;
+    left: 0;
   }
 }
 @media only screen and (max-height: 500px) {
@@ -577,9 +608,10 @@ body:before {
   position: relative;
   left: -2rem;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .modal__content--view-text {
-    font-size: 1.5rem;
+    font-weight: normal;
+    left: 0;
   }
 }
 @media only screen and (max-height: 500px) {
@@ -680,9 +712,8 @@ body:before {
 .mobile-nav__list {
   display: none;
   list-style: none;
-  margin-left: 1rem;
   position: relative;
-  padding: 1rem;
+  padding-top: 1.5rem;
   transition: all 2s;
 }
 .mobile-nav__list--item {
@@ -721,6 +752,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__desc {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__overview {
@@ -761,6 +793,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__title {
     font-size: 7rem;
+    font-weight: 300;
   }
 }
 .about__title--top {
@@ -836,6 +869,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-intro h2 {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-intro :nth-child(2) {
@@ -845,6 +879,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-intro :nth-child(2) {
     font-size: 4rem;
+    font-weight: 300;
   }
 }
 .about__card-intro :nth-child(3) {
@@ -854,6 +889,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-intro :nth-child(3) {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-intro :nth-child(5) {
@@ -863,6 +899,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-intro :nth-child(5) {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-contact {
@@ -877,6 +914,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-contact h2 {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-contact :nth-child(2) {
@@ -886,6 +924,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-contact :nth-child(2) {
     font-size: 4rem;
+    font-weight: 300;
   }
 }
 .about__card-contact :nth-child(3) {
@@ -895,6 +934,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-contact :nth-child(3) {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-contact :nth-child(4) {
@@ -904,6 +944,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-contact :nth-child(4) {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-skills {
@@ -918,6 +959,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-skills h2 {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-skills p {
@@ -927,6 +969,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-skills p {
     font-size: 4rem;
+    font-weight: 300;
   }
 }
 .about__card-skills :nth-child(3) {
@@ -936,6 +979,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-skills :nth-child(3) {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-skills :nth-child(4) {
@@ -945,6 +989,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .about__card-skills :nth-child(4) {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .about__card-results {
@@ -1002,6 +1047,7 @@ body:before {
 @media only screen and (max-width: 600px) {
   .education__details h2 {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .education__details--blurb {
@@ -1011,6 +1057,7 @@ body:before {
 @media only screen and (max-width: 600px) {
   .education__details--blurb {
     font-size: 4rem;
+    font-weight: 300;
   }
 }
 .education__details--course {
@@ -1020,6 +1067,7 @@ body:before {
 @media only screen and (max-width: 600px) {
   .education__details--course {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 
@@ -1090,6 +1138,7 @@ body:before {
 @media only screen and (max-width: 600px) {
   .education__game h1 {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .education__game--new {
@@ -1099,6 +1148,7 @@ body:before {
 @media only screen and (max-width: 600px) {
   .education__game--new {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .education__game--inst {
@@ -1161,6 +1211,7 @@ body:before {
 @media only screen and (max-width: 600px) {
   .instruction-container h2 {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 .instruction-container__blurb {
@@ -1171,6 +1222,7 @@ body:before {
 @media only screen and (max-width: 600px) {
   .instruction-container__blurb {
     font-size: 4rem;
+    font-weight: 300;
   }
 }
 .instruction-container__desc {
@@ -1181,6 +1233,7 @@ body:before {
 @media only screen and (max-width: 600px) {
   .instruction-container__desc {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 
@@ -1203,6 +1256,11 @@ body:before {
   margin-bottom: 4rem;
   font-size: 1.5rem;
   font-weight: 300;
+}
+@media only screen and (max-width: 800px) {
+  #color-display {
+    font-weight: normal;
+  }
 }
 
 .message {
@@ -1257,6 +1315,7 @@ body:before {
   align-items: center;
   color: white;
   transition: all;
+  padding: 5rem;
 }
 .landing__title {
   font-size: 10rem;
@@ -1757,6 +1816,7 @@ body:before {
 @media only screen and (max-width: 800px) {
   .search-warning {
     font-size: 2rem;
+    font-weight: normal;
   }
 }
 
