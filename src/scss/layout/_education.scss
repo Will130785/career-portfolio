@@ -1,3 +1,4 @@
+//Education section styling
 .education {
     min-height: 100vh;
     background-color: #010304;
@@ -12,11 +13,11 @@
         padding: 5rem;
     }
 
+    //Education details
     &__details {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // align-items: center;
         margin-left: 5rem;
         font-weight: 100;
 

@@ -1,10 +1,6 @@
+//Weather details styles
 .weather-container {
     width: 100%;
-
-    // display: grid;
-    // grid-template-columns: repeat(12, 1fr);
-    // grid-template-rows: repeat(12, 1fr);
-
     grid-column: 1 / -1;
     grid-row: 1 / -1;
 }
@@ -18,7 +14,6 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
     grid-gap: 1rem;
-    // justify-items: center;
     align-items: center;
     font-weight: 300;
 
@@ -80,12 +75,6 @@
 
 }
 
-// .text {
-//     grid-row: 5 / 5;
-//     grid-column: 9 / -1;
-//     font-size: 1.5rem;
-
-// }
 
 .temp {
     grid-row: 5 / 6;
@@ -133,14 +122,10 @@
 .country-info {
     position: relative;
     margin-left: 2rem;
-    // top: 1rem;
-    // display: flex;
-    // justify-content: center;
 }
 
 .city-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
@@ -148,7 +133,6 @@
 
 .region-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
@@ -156,7 +140,6 @@
 
 .temp-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
@@ -164,7 +147,6 @@
 
 .feels-like-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem
@@ -172,7 +154,6 @@
 
 .wind-speed-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
@@ -180,7 +161,6 @@
 
 .wind-direction-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
@@ -188,7 +168,6 @@
 
 .humidity-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
@@ -196,7 +175,6 @@
 
 .uv-rating-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
@@ -204,7 +182,6 @@
 
 .visibility-info {
     position: relative;
-    // top: 1rem;
     display: flex;
     justify-content: center;
     margin-left: 2rem;

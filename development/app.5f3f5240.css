@@ -389,6 +389,7 @@ body:before {
     width: 2.8rem;
   }
 }
+
 .hamburger:hover {
   border: 2px solid #ffb129;
 }
@@ -751,8 +752,6 @@ body:before {
   background-color: black;
   position: fixed;
   z-index: 6;
-  transition: all 1s;
-  overflow: hidden;
   transition: all 2s;
 }
 .mobile-nav__list {
@@ -1378,6 +1377,7 @@ body:before {
 .landing__title {
   font-size: 10rem;
 }
+
 .title-animation {
   animation: text-flicker-in-glow 3s;
 }

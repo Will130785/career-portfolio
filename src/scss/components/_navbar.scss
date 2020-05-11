@@ -74,25 +74,21 @@
     background-color: black;
     position: fixed;
     z-index: 6;
-    transition: all 1s;
-    // overflow: hidden;
-    // padding: 1rem;
     transition: all 2s;
 
+    //Dropdown section
     &__list {
-        // margin-left: 1rem;
-        // position: relative;
+        display: block;
+        position: fixed;
+        width: 100%;
+        z-index: 5;
+        top: 7rem;
+        list-style: none;
+        height: 0;
+        background-color: black;
+        transition: all .7s;
 
-            display: block;
-            position: fixed;
-            width: 100%;
-            z-index: 5;
-            top: 7rem;
-            list-style: none;
-            height: 0;
-            background-color: black;
-            transition: all .7s;
-
+        //Nav items
         &--item {
             margin-bottom: 1rem;
             position: relative;
@@ -100,14 +96,13 @@
             transition: all 1s;
         }
 
+        //Nav links
         &--link {
             color: white;
             text-decoration: none;
-            // margin: 1.5rem 1rem;
             display: none;
             animation: mobileNavLinks 1.5s;
             font-size: 2rem;
-            // display: none;
 
             @media only screen and (max-width: 500px) {
                 font-size: 2.5rem;

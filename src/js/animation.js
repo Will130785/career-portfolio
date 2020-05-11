@@ -1,10 +1,13 @@
 //Function to repeat landing section animation
 export const animation = () => {
+    //Interval to carry out lightning animation effect
     setInterval(() => {
         document.querySelector(".landing__title").classList.toggle("title-animation");
         document.querySelector(".landing__sub").classList.toggle("sub-animation");
     }, 4000);
 
+
+    //run through initial order of headings
     setTimeout(() => {
 
     
@@ -26,7 +29,7 @@ export const animation = () => {
 
     }, 6000)
 
-    
+    //After initial run through, continue to run through every 24 secs
     setInterval(() => {
 
     

@@ -14,10 +14,12 @@ const modalSeven = document.querySelector(".modal__content--7");
 const modalEight = document.querySelector(".modal__content--8");
 const modalNine = document.querySelector(".modal__content--9");
 
+//Loop through portfolio cards and add event listeners to each
 projects.forEach(project => {
     project.addEventListener("click", e => {
-
+        //Set modal to block
         modal.style.display = "block";
+        //Check which project card was clicked and display accordingly 
         if(project.classList.contains("portfolio__card--1")) {
             modalOne.style.display = "grid";
             modalTwo.style.display = "none";
@@ -114,7 +116,7 @@ projects.forEach(project => {
 
 });
 
-
+//Close modal
 modal.addEventListener("click", e => {
     if(e.target === modal){
         modal.style.display = "none";

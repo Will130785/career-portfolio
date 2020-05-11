@@ -228,10 +228,12 @@ exports.animation = void 0;
 
 //Function to repeat landing section animation
 var animation = function animation() {
+  //Interval to carry out lightning animation effect
   setInterval(function () {
     document.querySelector(".landing__title").classList.toggle("title-animation");
     document.querySelector(".landing__sub").classList.toggle("sub-animation");
-  }, 4000);
+  }, 4000); //run through initial order of headings
+
   setTimeout(function () {
     setTimeout(function () {
       document.querySelector(".landing__title").innerHTML = "Software Developer";
@@ -245,7 +247,8 @@ var animation = function animation() {
       document.querySelector(".landing__title").innerHTML = "Hi, I'm Will";
       document.querySelector(".landing__sub").innerHTML = "Full Stack Web Developer";
     }, 18000);
-  }, 6000);
+  }, 6000); //After initial run through, continue to run through every 24 secs
+
   setInterval(function () {
     setTimeout(function () {
       document.querySelector(".landing__title").innerHTML = "Software Developer";
@@ -284,7 +287,8 @@ var tabs = function tabs() {
   var weatherInput = document.querySelector(".about__card-skills");
   var game = document.querySelector(".game-container");
   var instruction = document.querySelector(".instruction-container");
-  var display = document.querySelector(".about__card-results");
+  var display = document.querySelector(".about__card-results"); //Depending on which tab is clicked, display accordingly
+
   introducingLink.addEventListener("click", function () {
     introducingLink.classList.add("active");
     contactLink.classList.remove("active");
@@ -341,26 +345,59 @@ exports.hamburger = void 0;
 var hamburger = function hamburger() {
   //Event listener for hamburger
   var hamburger = document.querySelector(".hamburger");
-  var mobileNav = document.querySelector(".mobile-nav");
   var mobileNavContent = document.querySelector(".mobile-nav__list");
   var mobileNavLinks = document.querySelectorAll(".mobile-nav__list--link");
-  var navBar = document.querySelector(".navbar");
-  var navContent = document.querySelector(".navbar__list");
-  var navbarActive = 0;
+  var navBrand = document.querySelector(".navbar__navbrand--link"); //Track navbar status
+
+  var navbarActive = 0; //0 = innactive, 1 = active
+  //Add event listener to hamburger
+
   hamburger.addEventListener("click", function (e) {
+    //Check status of navbar when user clicks hamburger
     if (navbarActive === 0) {
-      mobileNavContent.style.height = "25rem";
+      //if not currently open set the height
+      mobileNavContent.style.height = "25rem"; //loop through links and display
+
       mobileNavLinks.forEach(function (link) {
         link.style.display = "block";
-      });
+      }); //Set status to active
+
       navbarActive = 1;
     } else if (navbarActive === 1) {
-      mobileNavContent.style.height = "0";
+      //If navbar is active change the height to 0
+      mobileNavContent.style.height = "0"; //Loop through links and hide
+
       mobileNavLinks.forEach(function (link) {
-        link.style.display = "none"; // link.style.animation = "mobileNavLinksFade .8s";
-      });
+        link.style.display = "none";
+      }); //Set navbar back to inactive
+
       navbarActive = 0;
     }
+  }); //When user clicks on a link
+
+  mobileNavLinks.forEach(function (link) {
+    //loop through links and add event listener
+    link.addEventListener("click", function () {
+      //Set height to 0
+      mobileNavContent.style.height = "0"; //Loop through and hide links
+
+      mobileNavLinks.forEach(function (link) {
+        link.style.display = "none";
+      }); //Set navbat to inactive
+
+      navbarActive = 0;
+    });
+  }); //If user clicks on the navbrand/home link
+
+  navBrand.addEventListener("click", function () {
+    //set height to 0
+    mobileNavContent.style.height = "0"; //Loop through links and hide
+
+    mobileNavLinks.forEach(function (link) {
+      link.style.display = "none";
+    }); //Set navbar to inactive
+
+    navbarActive = 0;
   });
 };
 
@@ -387,10 +424,12 @@ var modal = function modal() {
   var modalSix = document.querySelector(".modal__content--6");
   var modalSeven = document.querySelector(".modal__content--7");
   var modalEight = document.querySelector(".modal__content--8");
-  var modalNine = document.querySelector(".modal__content--9");
+  var modalNine = document.querySelector(".modal__content--9"); //Loop through portfolio cards and add event listeners to each
+
   projects.forEach(function (project) {
     project.addEventListener("click", function (e) {
-      modal.style.display = "block";
+      //Set modal to block
+      modal.style.display = "block"; //Check which project card was clicked and display accordingly 
 
       if (project.classList.contains("portfolio__card--1")) {
         modalOne.style.display = "grid";
@@ -484,7 +523,8 @@ var modal = function modal() {
         modalNine.style.display = "grid";
       }
     });
-  });
+  }); //Close modal
+
   modal.addEventListener("click", function (e) {
     if (e.target === modal) {
       modal.style.display = "none";
@@ -542,12 +582,15 @@ var colorGame = function colorGame() {
   circles.forEach(function (circle, index) {
     getRandomColors();
     circle.addEventListener("click", function () {
+      //Check that game is still in play
       if (!gameover) {
-        var clickedColor = colors[index];
+        var clickedColor = colors[index]; //Check if correct color is picked
 
         if (clickedColor !== pickedColor) {
+          //If not fade away circle
           circle.style.backgroundColor = "black";
         } else {
+          //If matched, set gameover to true and change container background color
           gameContainer.style.backgroundColor = pickedColor;
           gameover = true;
         }
@@ -2937,7 +2980,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53030" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49535" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

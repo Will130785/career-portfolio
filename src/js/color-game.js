@@ -47,11 +47,15 @@ export const colorGame = () => {
         getRandomColors();
         circle.addEventListener("click", () => {
 
+            //Check that game is still in play
             if(!gameover) {
                 let clickedColor = colors[index];
+                //Check if correct color is picked
                 if(clickedColor !== pickedColor) {
+                    //If not fade away circle
                     circle.style.backgroundColor = "black";
                 } else {
+                    //If matched, set gameover to true and change container background color
                     gameContainer.style.backgroundColor = pickedColor;
                     gameover = true;
                 }
