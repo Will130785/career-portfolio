@@ -1,9 +1,9 @@
 //Hamburger button styling
 .hamburger {
     cursor: pointer;
-    height: 3.5rem;
-    width: 3.5rem;
-    border: 2px solid white;
+    height: 4rem;
+    width: 4rem;
+    border: 1.5px solid white;
     //Start hidden
     display: none;
     flex-direction: column;
@@ -16,12 +16,21 @@
         display: flex;
     }
 
+    @media only screen and (max-width: 500px) {
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
     //Hamburger line settings
     span {
-        width: 2.4rem;
+        width: 2.6rem;
         display: block;
-        border-bottom: 2px solid white;
-        margin: .3rem 0;
+        border-bottom: 1.5px solid white;
+        margin: .4rem 0;
+
+        @media only screen and (max-width: 500px) {
+            width: 2.8rem;
+        }
     }
 
     &__top {
@@ -45,11 +54,4 @@
     span {
         border-bottom: 2px solid #ffb1299c;
     }
-}
-
-//Set position of the mobile navbar hamburger
-.hamburger-mob {
-    position: absolute;
-    right: 0;
-    top: 2.2rem;
 }

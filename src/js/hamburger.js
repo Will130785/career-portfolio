@@ -1,45 +1,37 @@
 export const hamburger = () => {
     //Event listener for hamburger
-const hamburger = document.querySelectorAll(".hamburger");
+const hamburger = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
 const mobileNavContent = document.querySelector(".mobile-nav__list");
 const mobileNavLinks = document.querySelectorAll(".mobile-nav__list--link");
 const navBar = document.querySelector(".navbar");
+const navContent = document.querySelector(".navbar__list");
 
 
 let navbarActive = 0;
 
-hamburger.forEach((burger) => {
-
-    burger.addEventListener("click", e => {
+    hamburger.addEventListener("click", e => {
         if(navbarActive === 0) {
-            // navBar.style.display = "none"
-            mobileNav.style.height = "23rem";
+            mobileNavContent.style.height = "25rem";
+        
             mobileNavLinks.forEach(link => {
-                link.style.display = "block";
-            });
-            mobileNavContent.style.display = "block";
-            navbarActive = 1;
+            link.style.display = "block";
+        })
+
+        navbarActive = 1;
+            
         } else if(navbarActive === 1) {
-            navBar.style.display = "flex";
-            mobileNav.style.height = "0px";
+            mobileNavContent.style.height = "0";
+
             mobileNavLinks.forEach(link => {
-            // link.style.display = "none";
-            });
-            // mobileNavContent.style.display = "none";
+                link.style.display = "none";
+                // link.style.animation = "mobileNavLinksFade .8s";
+            })
+
             navbarActive = 0;
         }
-    });
 
-});
-
-mobileNavLinks.forEach(link => {
-
-    link.addEventListener("click", e => {
-        navBar.style.display = "flex";
-        mobileNav.style.height = "0px";
-        navbarActive = 0;
     })
 
-});
 }  
+

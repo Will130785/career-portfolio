@@ -204,6 +204,17 @@
             grid-row: 11 / 12;
         }
 
+        &--icon {
+            fill: white;
+            height: 5rem;
+            width: 5rem;
+            transition: all .2s;
+        }
+
+        &--icon:hover {
+            fill: #ffb129;
+        }
+
         &--git-text {
             grid-column: 5 / 7;
             grid-row: 11 / 12;
@@ -228,7 +239,7 @@
         }
 
         &--view {
-            grid-column: 7 / 8;
+            grid-column: 8 / 10;
             grid-row: 11 / 12;
             
         }
