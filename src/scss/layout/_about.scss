@@ -2,8 +2,8 @@
 .about {
     min-height: 100vh;
     background-color: #010304;
-    max-width: 100%;
-    overflow: hidden;
+    max-width: 100vw;
+    position: relative;
 
     //Set grid
     display: grid;
