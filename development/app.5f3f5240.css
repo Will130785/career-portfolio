@@ -790,7 +790,8 @@ body:before {
 .about {
   min-height: 100vh;
   background-color: #010304;
-  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -1072,7 +1073,7 @@ body:before {
 .education {
   min-height: 100vh;
   background-color: #010304;
-  width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -1132,7 +1133,7 @@ body:before {
 
 .footer {
   min-height: 20vh;
-  width: 100%;
+  max-width: 100%;
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -1391,7 +1392,7 @@ body:before {
 
 .portfolio {
   min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: repeat(13, 1fr);
@@ -1508,7 +1509,7 @@ body:before {
 
 .skill-sec {
   min-height: 100vh;
-  width: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: repeat(12, 1fr);
