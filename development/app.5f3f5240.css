@@ -790,8 +790,7 @@ body:before {
 .about {
   min-height: 100vh;
   background-color: #010304;
-  max-width: 100%;
-  overflow: hidden;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -820,7 +819,6 @@ body:before {
   justify-content: center;
   align-items: baseline;
   position: relative;
-  left: 25%;
 }
 @media only screen and (max-width: 800px) {
   .about__overview {
