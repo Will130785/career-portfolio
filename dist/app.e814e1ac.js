@@ -186,4 +186,4 @@ var e=require("../core-js/object/define-property");function r(r,n){for(var o=0;o
 },{"@babel/runtime-corejs2/regenerator":"i9LV","@babel/runtime-corejs2/helpers/asyncToGenerator":"OYLD","@babel/runtime-corejs2/helpers/classCallCheck":"Tzth","@babel/runtime-corejs2/helpers/createClass":"xM5U"}],"s2Ev":[function(require,module,exports) {
 "use strict";require("../scss/main.scss");var r=require("./navbar-scroll"),e=require("./animation"),a=require("./tabs"),i=require("./hamburger"),s=require("./modal"),u=require("./color-game"),o=require("./weather");(0,r.scrollEffect)(),(0,e.animation)(),(0,a.tabs)(),(0,i.hamburger)(),(0,s.modal)(),(0,o.getWeather)(),(0,u.colorGame)();
 },{"../scss/main.scss":"rbSf","./navbar-scroll":"T13I","./animation":"mS4d","./tabs":"TmNQ","./hamburger":"esQV","./modal":"eFJk","./color-game":"nHjW","./weather":"OGos"}]},{},["s2Ev"], null)
-//# sourceMappingURL=app.1a115f9f.js.map
+//# sourceMappingURL=app.e814e1ac.js.map
